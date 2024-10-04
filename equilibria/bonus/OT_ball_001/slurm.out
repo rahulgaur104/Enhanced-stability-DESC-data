@@ -1,0 +1,2257 @@
+DESC version 0.9.0+3698.g1ffd93a4.dirty,using JAX backend, jax version=0.4.23, jaxlib version=0.4.23, dtype=float64
+Using device: NVIDIA A100 80GB PCIe (id=0), with 80.00 GB available memory
+0.009664001074464279
+current= [     0.           1516.99933102   6038.41784348  13490.09905583
+  23793.78819789  36923.82743442  52964.44911921  72146.55316611
+  94836.63939218 121443.91944626 152213.67259574]
+D_Mercier= [            nan -3.09942328e+02 -5.26705608e+01 -9.34716141e+00
+  1.81414204e+00  3.71719413e+00  2.60478886e+00  1.03359259e+00
+  1.24129204e-01  4.50581189e-03 -3.01679980e-01]
+iota [0.92369426 0.91999895 0.90938717 0.89323961 0.87371664 0.85354477
+ 0.83572108 0.82314233 0.81815482 0.82200453 0.83418068]
+
+---------------------------------------
+Optimizing boundary modes M, N <= 2
+---------------------------------------
+Building objective: Mercier Stability
+Precomputing transforms
+Timer: Precomputing transforms = 897 ms
+Building objective: aspect ratio
+Precomputing transforms
+Timer: Precomputing transforms = 98.6 ms
+Building objective: elongation
+Precomputing transforms
+Timer: Precomputing transforms = 2.36 sec
+Building objective: generic
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 3.66 sec
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 478 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 229 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 232 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 323 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 214 ms
+Timer: Objective build = 14.6 sec
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 948 ms
+Timer: Objective build = 1.37 sec
+Timer: Proximal projection build = 31.1 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed-pressure
+Building objective: fixed-iota
+Building objective: fixed-Psi
+Building objective: fixed omnigenity B_max
+Building objective: fixed omnigenity map
+Building objective: custom linear
+Timer: Objective build = 2.52 sec
+Timer: Linear constraint projection build = 5.09 sec
+Number of parameters: 58
+Number of objectives: 3926
+Starting optimization
+Using method: proximal-lsq-exact
+2024-04-06 01:16:36.940185: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit__jvp] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+2024-04-06 01:17:09.529777: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 2m32.589746808s
+
+********************************
+[Compiling module jit__jvp] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          4.106e+05                                    3.311e+07   
+       1              3          4.063e+05      4.252e+03      2.263e-02      8.384e+07   
+       2              4          3.933e+05      1.301e+04      2.955e-02      1.736e+07   
+       3              5          3.903e+05      3.067e+03      7.337e-02      7.025e+07   
+       4              6          3.819e+05      8.315e+03      9.251e-02      5.353e+06   
+       5              7          3.773e+05      4.669e+03      9.705e-02      4.134e+06   
+       6              9          3.753e+05      1.979e+03      4.947e-02      8.665e+06   
+       7             10          3.723e+05      2.969e+03      7.548e-02      3.804e+06   
+       8             12          3.713e+05      1.057e+03      4.309e-02      4.528e+06   
+       9             13          3.695e+05      1.777e+03      3.668e-02      3.666e+06   
+      10             14          3.681e+05      1.397e+03      5.280e-02      3.566e+07   
+      11             15          3.643e+05      3.789e+03      4.639e-02      2.987e+06   
+      12             16          3.629e+05      1.366e+03      1.369e-01      3.168e+06   
+      13             17          3.609e+05      2.033e+03      3.935e-02      8.776e+06   
+      14             18          3.578e+05      3.071e+03      5.613e-02      2.944e+06   
+      15             20          3.569e+05      9.686e+02      2.719e-02      1.348e+07   
+      16             21          3.545e+05      2.375e+03      4.641e-02      2.570e+06   
+      17             22          3.507e+05      3.763e+03      8.014e-02      2.411e+06   
+      18             23          3.447e+05      6.064e+03      1.340e-01      2.275e+06   
+      19             25          3.446e+05      5.608e+01      7.577e-02      4.682e+07   
+      20             26          3.416e+05      3.004e+03      2.600e-02      3.827e+06   
+      21             27          3.404e+05      1.161e+03      4.094e-02      3.125e+06   
+      22             28          3.384e+05      2.067e+03      5.804e-02      5.743e+06   
+      23             29          3.351e+05      3.283e+03      7.859e-02      2.307e+07   
+      24             30          3.314e+05      3.653e+03      9.298e-02      7.015e+07   
+      25             31          3.204e+05      1.108e+04      1.104e-01      2.393e+06   
+      26             32          3.073e+05      1.304e+04      9.277e-02      2.481e+06   
+      27             33          2.774e+05      2.987e+04      1.635e-01      2.658e+06   
+      28             34          2.160e+05      6.149e+04      4.242e-01      2.805e+06   
+      29             36          1.773e+05      3.862e+04      3.837e-01      3.423e+06   
+      30             38          1.608e+05      1.649e+04      2.767e-01      2.384e+06   
+      31             39          1.433e+05      1.756e+04      5.159e-01      2.343e+06   
+      32             41          1.345e+05      8.745e+03      3.809e-01      2.099e+06   
+      33             42          1.209e+05      1.362e+04      4.130e-01      1.888e+06   
+      34             45          1.189e+05      2.013e+03      1.429e-01      1.855e+06   
+      35             48          1.187e+05      1.830e+02      1.774e-02      1.855e+06   
+      36             49          1.185e+05      1.742e+02      1.670e-02      1.850e+06   
+      37             74          1.185e+05      0.000e+00      0.000e+00      1.850e+06   
+Warning: A bad approximation caused failure to predict improvement.
+         Current function value: 1.185e+05
+         Total delta_x: 2.009e+00
+         Iterations: 37
+         Function evaluations: 74
+         Jacobian evaluations: 37
+Timer: Solution time = 59.6 min
+Timer: Avg time per step = 1.56 min
+Start of solver
+Total (sum of squares):  4.106e+05, 
+Maximum Mercier Stability:  1.241e-01 (Wb^-2)
+Minimum Mercier Stability: -3.017e-01 (Wb^-2)
+Average Mercier Stability:  1.288e-02 (Wb^-2)
+Maximum Mercier Stability:  9.453e-04 (normalized)
+Minimum Mercier Stability: -2.297e-03 (normalized)
+Average Mercier Stability:  9.810e-05 (normalized)
+Aspect ratio:  7.497e+00 (dimensionless)
+Elongation:  1.971e+00 (dimensionless)
+Maximum GenericObjective value: -1.460e+00 (m^{-1})
+Minimum GenericObjective value: -5.309e+01 (m^{-1})
+Average GenericObjective value: -8.871e+00 (m^{-1})
+Maximum GenericObjective value: -1.460e+00 (normalized)
+Minimum GenericObjective value: -5.309e+01 (normalized)
+Average GenericObjective value: -8.871e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  6.886e-03 (normalized)
+Minimum absolute Ideal-ballooning Stability:  6.886e-03 (normalized)
+Average absolute Ideal-ballooning Stability:  6.886e-03 (normalized)
+Maximum absolute Ideal-ballooning Stability:  6.886e-03 (normalized)
+Minimum absolute Ideal-ballooning Stability:  6.886e-03 (normalized)
+Average absolute Ideal-ballooning Stability:  6.886e-03 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Omnigenity error:  1.397e+00 (T)
+Minimum absolute Omnigenity error:  7.754e-03 (T)
+Average absolute Omnigenity error:  3.869e-01 (T)
+Maximum absolute Omnigenity error:  8.215e-01 (normalized)
+Minimum absolute Omnigenity error:  4.559e-03 (normalized)
+Average absolute Omnigenity error:  2.275e-01 (normalized)
+Maximum absolute Omnigenity error:  8.520e-01 (T)
+Minimum absolute Omnigenity error:  1.290e-03 (T)
+Average absolute Omnigenity error:  2.471e-01 (T)
+Maximum absolute Omnigenity error:  5.009e-01 (normalized)
+Minimum absolute Omnigenity error:  7.583e-04 (normalized)
+Average absolute Omnigenity error:  1.453e-01 (normalized)
+Maximum absolute Omnigenity error:  1.081e+00 (T)
+Minimum absolute Omnigenity error:  6.767e-04 (T)
+Average absolute Omnigenity error:  2.355e-01 (T)
+Maximum absolute Omnigenity error:  6.357e-01 (normalized)
+Minimum absolute Omnigenity error:  3.979e-04 (normalized)
+Average absolute Omnigenity error:  1.385e-01 (normalized)
+Maximum absolute Omnigenity error:  1.048e+00 (T)
+Minimum absolute Omnigenity error:  2.664e-03 (T)
+Average absolute Omnigenity error:  2.234e-01 (T)
+Maximum absolute Omnigenity error:  6.163e-01 (normalized)
+Minimum absolute Omnigenity error:  1.566e-03 (normalized)
+Average absolute Omnigenity error:  1.314e-01 (normalized)
+Maximum absolute Omnigenity error:  6.641e-01 (T)
+Minimum absolute Omnigenity error:  1.215e-04 (T)
+Average absolute Omnigenity error:  1.662e-01 (T)
+Maximum absolute Omnigenity error:  3.905e-01 (normalized)
+Minimum absolute Omnigenity error:  7.143e-05 (normalized)
+Average absolute Omnigenity error:  9.773e-02 (normalized)
+Maximum absolute Omnigenity error:  5.073e-01 (T)
+Minimum absolute Omnigenity error:  9.715e-04 (T)
+Average absolute Omnigenity error:  1.550e-01 (T)
+Maximum absolute Omnigenity error:  2.983e-01 (normalized)
+Minimum absolute Omnigenity error:  5.712e-04 (normalized)
+Average absolute Omnigenity error:  9.113e-02 (normalized)
+Maximum absolute Force error:  1.945e+02 (N)
+Minimum absolute Force error:  1.721e-03 (N)
+Average absolute Force error:  8.888e+00 (N)
+Maximum absolute Force error:  4.686e-05 (normalized)
+Minimum absolute Force error:  4.146e-10 (normalized)
+Average absolute Force error:  2.141e-06 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed omnigenity B_max error:  0.000e+00 (rad)
+Fixed omnigenity map error:  0.000e+00 (rad)
+Custom linear Objective value:  3.140e-16(Unknown)
+End of solver
+Total (sum of squares):  1.185e+05, 
+Maximum Mercier Stability:  2.533e+01 (Wb^-2)
+Minimum Mercier Stability: -3.249e+00 (Wb^-2)
+Average Mercier Stability:  1.403e+01 (Wb^-2)
+Maximum Mercier Stability:  1.929e-01 (normalized)
+Minimum Mercier Stability: -2.474e-02 (normalized)
+Average Mercier Stability:  1.069e-01 (normalized)
+Aspect ratio:  7.300e+00 (dimensionless)
+Elongation:  1.950e+00 (dimensionless)
+Maximum GenericObjective value: -2.001e-01 (m^{-1})
+Minimum GenericObjective value: -1.299e+02 (m^{-1})
+Average GenericObjective value: -9.699e+00 (m^{-1})
+Maximum GenericObjective value: -2.001e-01 (normalized)
+Minimum GenericObjective value: -1.299e+02 (normalized)
+Average GenericObjective value: -9.699e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Omnigenity error:  9.242e-01 (T)
+Minimum absolute Omnigenity error:  7.869e-03 (T)
+Average absolute Omnigenity error:  3.213e-01 (T)
+Maximum absolute Omnigenity error:  5.434e-01 (normalized)
+Minimum absolute Omnigenity error:  4.627e-03 (normalized)
+Average absolute Omnigenity error:  1.889e-01 (normalized)
+Maximum absolute Omnigenity error:  3.591e-01 (T)
+Minimum absolute Omnigenity error:  1.796e-03 (T)
+Average absolute Omnigenity error:  8.979e-02 (T)
+Maximum absolute Omnigenity error:  2.112e-01 (normalized)
+Minimum absolute Omnigenity error:  1.056e-03 (normalized)
+Average absolute Omnigenity error:  5.280e-02 (normalized)
+Maximum absolute Omnigenity error:  4.115e-01 (T)
+Minimum absolute Omnigenity error:  6.595e-04 (T)
+Average absolute Omnigenity error:  7.705e-02 (T)
+Maximum absolute Omnigenity error:  2.420e-01 (normalized)
+Minimum absolute Omnigenity error:  3.878e-04 (normalized)
+Average absolute Omnigenity error:  4.530e-02 (normalized)
+Maximum absolute Omnigenity error:  3.432e-01 (T)
+Minimum absolute Omnigenity error:  3.219e-04 (T)
+Average absolute Omnigenity error:  9.087e-02 (T)
+Maximum absolute Omnigenity error:  2.018e-01 (normalized)
+Minimum absolute Omnigenity error:  1.893e-04 (normalized)
+Average absolute Omnigenity error:  5.343e-02 (normalized)
+Maximum absolute Omnigenity error:  3.315e-01 (T)
+Minimum absolute Omnigenity error:  1.603e-04 (T)
+Average absolute Omnigenity error:  9.308e-02 (T)
+Maximum absolute Omnigenity error:  1.949e-01 (normalized)
+Minimum absolute Omnigenity error:  9.425e-05 (normalized)
+Average absolute Omnigenity error:  5.473e-02 (normalized)
+Maximum absolute Omnigenity error:  3.753e-01 (T)
+Minimum absolute Omnigenity error:  6.828e-04 (T)
+Average absolute Omnigenity error:  1.870e-01 (T)
+Maximum absolute Omnigenity error:  2.207e-01 (normalized)
+Minimum absolute Omnigenity error:  4.015e-04 (normalized)
+Average absolute Omnigenity error:  1.100e-01 (normalized)
+Maximum absolute Force error:  5.832e+02 (N)
+Minimum absolute Force error:  1.522e-03 (N)
+Average absolute Force error:  1.476e+01 (N)
+Maximum absolute Force error:  1.405e-04 (normalized)
+Minimum absolute Force error:  3.667e-10 (normalized)
+Average absolute Force error:  3.555e-06 (normalized)
+R boundary error:  2.554e-19 (m)
+Z boundary error:  2.284e-19 (m)
+Fixed-pressure profile error:  7.771e-12 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed omnigenity B_max error:  0.000e+00 (rad)
+Fixed omnigenity map error:  0.000e+00 (rad)
+Custom linear Objective value:  3.140e-16(Unknown)
+current= [0.00000000e+00 3.42927549e+00 1.37174072e+01 3.08651340e+01
+ 5.48735782e+01 8.57442560e+01 1.23479087e+02 1.68080405e+02
+ 2.19550965e+02 2.77893956e+02 3.43113008e+02 4.15212198e+02
+ 4.94196062e+02 5.80069603e+02 6.72838294e+02 7.72508090e+02
+ 8.79085435e+02 9.92577264e+02 1.11299101e+03 1.24033463e+03
+ 1.37461656e+03 1.51584579e+03 1.66403181e+03 1.81918464e+03
+ 1.98131484e+03 2.15043350e+03 2.32655225e+03 2.50968327e+03
+ 2.69983926e+03 2.89703351e+03 3.10127982e+03 3.31259257e+03
+ 3.53098668e+03 3.75647762e+03 3.98908142e+03 4.22881468e+03
+ 4.47569452e+03 4.72973864e+03 4.99096528e+03 5.25939324e+03
+ 5.53504183e+03 5.81793110e+03 6.10808220e+03 6.40551712e+03
+ 6.71025859e+03 7.02233004e+03 7.34175563e+03 7.66856025e+03
+ 8.00276954e+03 8.34440987e+03 8.69350835e+03 9.05009286e+03
+ 9.41419202e+03 9.78583521e+03 1.01650526e+04 1.05518750e+04
+ 1.09463341e+04 1.13484624e+04 1.17582930e+04 1.21758599e+04
+ 1.26011978e+04 1.30343424e+04 1.34753307e+04 1.39242008e+04
+ 1.43809918e+04 1.48457436e+04 1.53184970e+04 1.57992937e+04
+ 1.62881765e+04 1.67851889e+04 1.72903755e+04 1.78037816e+04
+ 1.83254538e+04 1.88554393e+04 1.93937864e+04 1.99405442e+04
+ 2.04957630e+04 2.10594939e+04 2.16317888e+04 2.22127009e+04
+ 2.28022841e+04 2.34005935e+04 2.40076858e+04 2.46236190e+04
+ 2.52484522e+04 2.58822456e+04 2.65250603e+04 2.71769588e+04
+ 2.78380045e+04 2.85082620e+04 2.91877970e+04 2.98766764e+04
+ 3.05749681e+04 3.12827413e+04 3.20000663e+04 3.27270146e+04
+ 3.34636589e+04 3.42100729e+04 3.49663318e+04 3.57325117e+04
+ 3.65086903e+04 3.72949461e+04 3.80913587e+04 3.88980089e+04
+ 3.97149787e+04 4.05423512e+04 4.13802110e+04 4.22286438e+04
+ 4.30877366e+04 4.39575776e+04 4.48382566e+04 4.57298645e+04
+ 4.66324934e+04 4.75462371e+04 4.84711905e+04 4.94074500e+04
+ 5.03551133e+04 5.13142796e+04 5.22850494e+04 5.32675248e+04
+ 5.42618093e+04 5.52680069e+04 5.62862199e+04 5.73165511e+04
+ 5.83591041e+04 5.94139838e+04 6.04812963e+04 6.15611487e+04
+ 6.26536492e+04 6.37589074e+04 6.48770337e+04 6.60081398e+04
+ 6.71523386e+04 6.83097439e+04 6.94804709e+04 7.06646358e+04
+ 7.18623558e+04 7.30737493e+04 7.42989360e+04 7.55380363e+04
+ 7.67911720e+04 7.80584640e+04 7.93400268e+04 8.06359735e+04
+ 8.19464176e+04 8.32714725e+04 8.46112520e+04 8.59658698e+04
+ 8.73354399e+04 8.87200761e+04 9.01198922e+04 9.15350018e+04
+ 9.29655185e+04 9.44115555e+04 9.58732257e+04 9.73506416e+04
+ 9.88439153e+04 1.00353158e+05 1.01878481e+05 1.03419993e+05
+ 1.04977805e+05 1.06552018e+05 1.08142705e+05 1.09749930e+05
+ 1.11373753e+05 1.13014230e+05 1.14671413e+05 1.16345350e+05
+ 1.18036085e+05 1.19743655e+05 1.21468096e+05 1.23209437e+05
+ 1.24967702e+05 1.26742908e+05 1.28535070e+05 1.30344195e+05
+ 1.32170283e+05 1.34013331e+05 1.35873328e+05 1.37750255e+05
+ 1.39644088e+05 1.41554796e+05 1.43482341e+05 1.45426676e+05
+ 1.47387748e+05 1.49365495e+05 1.51359850e+05 1.53370735e+05
+ 1.55398065e+05 1.57441745e+05 1.59501676e+05 1.61577745e+05
+ 1.63669835e+05 1.65777818e+05 1.67901559e+05 1.70040912e+05
+ 1.72195726e+05 1.74365840e+05 1.76551085e+05 1.78751284e+05
+ 1.80966254e+05]
+D_Mercier= [            nan -2.29208100e+07 -1.32826576e+06 -2.27958688e+05
+ -5.68540124e+04 -1.52233433e+04 -2.57160776e+03  1.66871396e+03
+  3.05749403e+03  3.39001711e+03  3.31891074e+03  3.09951818e+03
+  2.83748534e+03  2.57680880e+03  2.33473749e+03  2.11678366e+03
+  1.92312211e+03  1.75218699e+03  1.60170838e+03  1.46924649e+03
+  1.35245149e+03  1.24909314e+03  1.15737686e+03  1.07576738e+03
+  1.00293909e+03  9.37732203e+02  8.79102879e+02  8.26236941e+02
+  7.78440474e+02  7.35114418e+02  6.95722881e+02  6.59779718e+02
+  6.26908536e+02  5.96782446e+02  5.69114975e+02  5.43638980e+02
+  5.20112124e+02  4.98347244e+02  4.78178531e+02  4.59458437e+02
+  4.42041622e+02  4.25794760e+02  4.10613518e+02  3.96408151e+02
+  3.83097652e+02  3.70596858e+02  3.58834065e+02  3.47752744e+02
+  3.37301393e+02  3.27432653e+02  3.18093447e+02  3.09241906e+02
+  3.00844337e+02  2.92869724e+02  2.85288783e+02  2.78066829e+02
+  2.71178502e+02  2.64602871e+02  2.58320500e+02  2.52312302e+02
+  2.46554791e+02  2.41030693e+02  2.35725154e+02  2.30625665e+02
+  2.25719216e+02  2.20989594e+02  2.16426763e+02  2.12021924e+02
+  2.07766789e+02  2.03652008e+02  1.99666204e+02  1.95802858e+02
+  1.92056056e+02  1.88420199e+02  1.84888227e+02  1.81452151e+02
+  1.78107659e+02  1.74850716e+02  1.71677486e+02  1.68582382e+02
+  1.65559872e+02  1.62606456e+02  1.59718787e+02  1.56894233e+02
+  1.54128245e+02  1.51417131e+02  1.48758936e+02  1.46151782e+02
+  1.43593809e+02  1.41081274e+02  1.38611745e+02  1.36183900e+02
+  1.33796469e+02  1.31448090e+02  1.29135696e+02  1.26857731e+02
+  1.24613324e+02  1.22401632e+02  1.20221612e+02  1.18070785e+02
+  1.15948200e+02  1.13853425e+02  1.11786036e+02  1.09745185e+02
+  1.07728895e+02  1.05736631e+02  1.03768068e+02  1.01822893e+02
+  9.99003762e+01  9.79989959e+01  9.61185058e+01  9.42587545e+01
+  9.24195935e+01  9.06003654e+01  8.87999548e+01  8.70183105e+01
+  8.52554111e+01  8.35112348e+01  8.17851614e+01  8.00764432e+01
+  7.83851579e+01  7.67119739e+01  7.50575204e+01  7.34211455e+01
+  7.18023744e+01  7.02013120e+01  6.86180581e+01  6.70526926e+01
+  6.55046114e+01  6.39735915e+01  6.24597967e+01  6.09633851e+01
+  5.94844677e+01  5.80225161e+01  5.65774925e+01  5.51496047e+01
+  5.37390535e+01  5.23459580e+01  5.09698802e+01  4.96109111e+01
+  4.82692854e+01  4.69458143e+01  4.56411351e+01  4.43548202e+01
+  4.30869565e+01  4.18377031e+01  4.06072063e+01  3.93954525e+01
+  3.82020932e+01  3.70272440e+01  3.58710447e+01  3.47336183e+01
+  3.36148886e+01  3.25145674e+01  3.14327544e+01  3.03695428e+01
+  2.93250048e+01  2.82989774e+01  2.72912055e+01  2.63017311e+01
+  2.53305732e+01  2.43785114e+01  2.34459263e+01  2.25323654e+01
+  2.16375774e+01  2.07612823e+01  1.99031673e+01  1.90626475e+01
+  1.82392376e+01  1.74325735e+01  1.66422601e+01  1.58678578e+01
+  1.51086710e+01  1.43641421e+01  1.36337762e+01  1.29170434e+01
+  1.22133551e+01  1.15218962e+01  1.08419956e+01  1.01729981e+01
+  9.51420476e+00  8.86483632e+00  8.22391340e+00  7.59058195e+00
+  6.96396090e+00  6.34310474e+00  5.72695735e+00  5.11428902e+00
+  4.50392569e+00  3.89460899e+00  3.28497088e+00  2.67345695e+00
+  2.05830013e+00  1.43773564e+00  8.09829587e-01  1.72450214e-01
+ -4.76756802e-01 -1.14039594e+00 -1.82135261e+00 -2.52282744e+00
+ -3.24837423e+00]
+iota metrics, max, min, min(abs) 0.923694255222926 0.8181354698170578 0.8181354698170578
+target_mode = 1.05
+
+---------------------------------------
+Optimizing boundary modes M, N <= 3
+---------------------------------------
+Building objective: Mercier Stability
+Precomputing transforms
+Timer: Precomputing transforms = 2.56 sec
+Building objective: aspect ratio
+Precomputing transforms
+Timer: Precomputing transforms = 100 ms
+Building objective: elongation
+Precomputing transforms
+Timer: Precomputing transforms = 2.12 sec
+Building objective: generic
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 2.17 sec
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 189 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 229 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 218 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 230 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 569 ms
+Timer: Objective build = 17.3 sec
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 636 ms
+Timer: Objective build = 1.04 sec
+Timer: Proximal projection build = 29.1 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed-pressure
+Building objective: fixed-iota
+Building objective: fixed-Psi
+Building objective: fixed omnigenity B_max
+Building objective: fixed omnigenity map
+Building objective: custom linear
+Timer: Objective build = 2.32 sec
+Timer: Linear constraint projection build = 3.74 sec
+Number of parameters: 82
+Number of objectives: 3926
+Starting optimization
+Using method: proximal-lsq-exact
+2024-04-06 02:22:47.363018: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 2m21.372259988s
+
+********************************
+[Compiling module jit__jvp] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          3.497e+05                                    1.403e+07   
+       1              2          3.349e+05      1.473e+04      1.105e-02      2.016e+07   
+       2              3          3.044e+05      3.051e+04      2.048e-03      1.535e+07   
+       3              4          3.005e+05      3.883e+03      3.892e-03      8.900e+06   
+       4              6          2.990e+05      1.590e+03      3.542e-04      8.752e+06   
+       5              7          2.960e+05      2.993e+03      3.553e-04      8.579e+06   
+       6              9          2.952e+05      7.754e+02      1.785e-04      8.496e+06   
+       7             11          2.947e+05      4.981e+02      4.440e-05      8.466e+06   
+       8             32          2.947e+05      0.000e+00      0.000e+00      8.466e+06   
+Warning: A bad approximation caused failure to predict improvement.
+         Current function value: 2.947e+05
+         Total delta_x: 1.288e-02
+         Iterations: 8
+         Function evaluations: 32
+         Jacobian evaluations: 8
+Timer: Solution time = 26.5 min
+Timer: Avg time per step = 2.95 min
+Start of solver
+Total (sum of squares):  3.497e+05, 
+Maximum Mercier Stability:  2.533e+01 (Wb^-2)
+Minimum Mercier Stability: -3.249e+00 (Wb^-2)
+Average Mercier Stability:  1.403e+01 (Wb^-2)
+Maximum Mercier Stability:  1.929e-01 (normalized)
+Minimum Mercier Stability: -2.474e-02 (normalized)
+Average Mercier Stability:  1.069e-01 (normalized)
+Aspect ratio:  7.300e+00 (dimensionless)
+Elongation:  1.950e+00 (dimensionless)
+Maximum GenericObjective value: -2.001e-01 (m^{-1})
+Minimum GenericObjective value: -1.299e+02 (m^{-1})
+Average GenericObjective value: -9.699e+00 (m^{-1})
+Maximum GenericObjective value: -2.001e-01 (normalized)
+Minimum GenericObjective value: -1.299e+02 (normalized)
+Average GenericObjective value: -9.699e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Omnigenity error:  9.242e-01 (T)
+Minimum absolute Omnigenity error:  7.869e-03 (T)
+Average absolute Omnigenity error:  3.213e-01 (T)
+Maximum absolute Omnigenity error:  5.900e-01 (normalized)
+Minimum absolute Omnigenity error:  5.024e-03 (normalized)
+Average absolute Omnigenity error:  2.051e-01 (normalized)
+Maximum absolute Omnigenity error:  3.591e-01 (T)
+Minimum absolute Omnigenity error:  1.796e-03 (T)
+Average absolute Omnigenity error:  8.979e-02 (T)
+Maximum absolute Omnigenity error:  2.293e-01 (normalized)
+Minimum absolute Omnigenity error:  1.146e-03 (normalized)
+Average absolute Omnigenity error:  5.732e-02 (normalized)
+Maximum absolute Omnigenity error:  4.115e-01 (T)
+Minimum absolute Omnigenity error:  6.595e-04 (T)
+Average absolute Omnigenity error:  7.705e-02 (T)
+Maximum absolute Omnigenity error:  2.627e-01 (normalized)
+Minimum absolute Omnigenity error:  4.210e-04 (normalized)
+Average absolute Omnigenity error:  4.919e-02 (normalized)
+Maximum absolute Omnigenity error:  3.432e-01 (T)
+Minimum absolute Omnigenity error:  3.219e-04 (T)
+Average absolute Omnigenity error:  9.087e-02 (T)
+Maximum absolute Omnigenity error:  2.191e-01 (normalized)
+Minimum absolute Omnigenity error:  2.055e-04 (normalized)
+Average absolute Omnigenity error:  5.801e-02 (normalized)
+Maximum absolute Omnigenity error:  3.315e-01 (T)
+Minimum absolute Omnigenity error:  1.603e-04 (T)
+Average absolute Omnigenity error:  9.308e-02 (T)
+Maximum absolute Omnigenity error:  2.116e-01 (normalized)
+Minimum absolute Omnigenity error:  1.023e-04 (normalized)
+Average absolute Omnigenity error:  5.943e-02 (normalized)
+Maximum absolute Omnigenity error:  3.753e-01 (T)
+Minimum absolute Omnigenity error:  6.828e-04 (T)
+Average absolute Omnigenity error:  1.870e-01 (T)
+Maximum absolute Omnigenity error:  2.396e-01 (normalized)
+Minimum absolute Omnigenity error:  4.359e-04 (normalized)
+Average absolute Omnigenity error:  1.194e-01 (normalized)
+Maximum absolute Force error:  5.832e+02 (N)
+Minimum absolute Force error:  1.522e-03 (N)
+Average absolute Force error:  1.476e+01 (N)
+Maximum absolute Force error:  1.574e-04 (normalized)
+Minimum absolute Force error:  4.109e-10 (normalized)
+Average absolute Force error:  3.983e-06 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed omnigenity B_max error:  0.000e+00 (rad)
+Fixed omnigenity map error:  0.000e+00 (rad)
+Custom linear Objective value:  3.140e-16(Unknown)
+End of solver
+Total (sum of squares):  2.947e+05, 
+Maximum Mercier Stability:  2.811e+01 (Wb^-2)
+Minimum Mercier Stability: -2.766e+00 (Wb^-2)
+Average Mercier Stability:  1.583e+01 (Wb^-2)
+Maximum Mercier Stability:  2.141e-01 (normalized)
+Minimum Mercier Stability: -2.106e-02 (normalized)
+Average Mercier Stability:  1.205e-01 (normalized)
+Aspect ratio:  7.323e+00 (dimensionless)
+Elongation:  1.937e+00 (dimensionless)
+Maximum GenericObjective value:  2.108e-01 (m^{-1})
+Minimum GenericObjective value: -1.299e+02 (m^{-1})
+Average GenericObjective value: -9.784e+00 (m^{-1})
+Maximum GenericObjective value:  2.108e-01 (normalized)
+Minimum GenericObjective value: -1.299e+02 (normalized)
+Average GenericObjective value: -9.784e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Omnigenity error:  9.431e-01 (T)
+Minimum absolute Omnigenity error:  1.351e-03 (T)
+Average absolute Omnigenity error:  3.188e-01 (T)
+Maximum absolute Omnigenity error:  6.021e-01 (normalized)
+Minimum absolute Omnigenity error:  8.622e-04 (normalized)
+Average absolute Omnigenity error:  2.035e-01 (normalized)
+Maximum absolute Omnigenity error:  3.731e-01 (T)
+Minimum absolute Omnigenity error:  1.443e-03 (T)
+Average absolute Omnigenity error:  9.800e-02 (T)
+Maximum absolute Omnigenity error:  2.382e-01 (normalized)
+Minimum absolute Omnigenity error:  9.212e-04 (normalized)
+Average absolute Omnigenity error:  6.257e-02 (normalized)
+Maximum absolute Omnigenity error:  4.245e-01 (T)
+Minimum absolute Omnigenity error:  4.812e-04 (T)
+Average absolute Omnigenity error:  7.645e-02 (T)
+Maximum absolute Omnigenity error:  2.710e-01 (normalized)
+Minimum absolute Omnigenity error:  3.072e-04 (normalized)
+Average absolute Omnigenity error:  4.881e-02 (normalized)
+Maximum absolute Omnigenity error:  3.354e-01 (T)
+Minimum absolute Omnigenity error:  2.426e-04 (T)
+Average absolute Omnigenity error:  9.500e-02 (T)
+Maximum absolute Omnigenity error:  2.141e-01 (normalized)
+Minimum absolute Omnigenity error:  1.549e-04 (normalized)
+Average absolute Omnigenity error:  6.065e-02 (normalized)
+Maximum absolute Omnigenity error:  3.188e-01 (T)
+Minimum absolute Omnigenity error:  1.080e-03 (T)
+Average absolute Omnigenity error:  9.009e-02 (T)
+Maximum absolute Omnigenity error:  2.035e-01 (normalized)
+Minimum absolute Omnigenity error:  6.897e-04 (normalized)
+Average absolute Omnigenity error:  5.752e-02 (normalized)
+Maximum absolute Omnigenity error:  3.622e-01 (T)
+Minimum absolute Omnigenity error:  9.813e-04 (T)
+Average absolute Omnigenity error:  1.691e-01 (T)
+Maximum absolute Omnigenity error:  2.312e-01 (normalized)
+Minimum absolute Omnigenity error:  6.264e-04 (normalized)
+Average absolute Omnigenity error:  1.080e-01 (normalized)
+Maximum absolute Force error:  4.663e+02 (N)
+Minimum absolute Force error:  3.570e-03 (N)
+Average absolute Force error:  1.518e+01 (N)
+Maximum absolute Force error:  1.258e-04 (normalized)
+Minimum absolute Force error:  9.635e-10 (normalized)
+Average absolute Force error:  4.098e-06 (normalized)
+R boundary error:  3.936e-20 (m)
+Z boundary error:  5.604e-20 (m)
+Fixed-pressure profile error:  6.574e-12 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed omnigenity B_max error:  0.000e+00 (rad)
+Fixed omnigenity map error:  0.000e+00 (rad)
+Custom linear Objective value:  3.140e-16(Unknown)
+current= [0.00000000e+00 3.36496206e+00 1.34602293e+01 3.02867707e+01
+ 5.38460938e+01 8.41402542e+01 1.21171865e+02 1.64944106e+02
+ 2.15460732e+02 2.72726082e+02 3.36745085e+02 4.07523270e+02
+ 4.85066770e+02 5.69382332e+02 6.60477319e+02 7.58359720e+02
+ 8.63038152e+02 9.74521868e+02 1.09282076e+03 1.21794536e+03
+ 1.34990685e+03 1.48871706e+03 1.63438848e+03 1.78693426e+03
+ 1.94636818e+03 2.11270473e+03 2.28595900e+03 2.46614681e+03
+ 2.65328459e+03 2.84738947e+03 3.04847922e+03 3.25657229e+03
+ 3.47168779e+03 3.69384549e+03 3.92306582e+03 4.15936987e+03
+ 4.40277939e+03 4.65331678e+03 4.91100508e+03 5.17586799e+03
+ 5.44792986e+03 5.72721579e+03 6.01375214e+03 6.30756616e+03
+ 6.60868594e+03 6.91714035e+03 7.23295908e+03 7.55617266e+03
+ 7.88681242e+03 8.22491052e+03 8.57049997e+03 8.92361459e+03
+ 9.28428905e+03 9.65255887e+03 1.00284604e+04 1.04120308e+04
+ 1.08033083e+04 1.12023315e+04 1.16091405e+04 1.20237756e+04
+ 1.24462785e+04 1.28766915e+04 1.33150588e+04 1.37614253e+04
+ 1.42158373e+04 1.46783420e+04 1.51489873e+04 1.56278226e+04
+ 1.61148980e+04 1.66102648e+04 1.71139752e+04 1.76260824e+04
+ 1.81466410e+04 1.86757063e+04 1.92133347e+04 1.97595839e+04
+ 2.03145124e+04 2.08781799e+04 2.14506473e+04 2.20319763e+04
+ 2.26222300e+04 2.32214726e+04 2.38297701e+04 2.44471899e+04
+ 2.50738007e+04 2.57096722e+04 2.63548757e+04 2.70094835e+04
+ 2.76735693e+04 2.83472079e+04 2.90304756e+04 2.97234499e+04
+ 3.04262095e+04 3.11388346e+04 3.18614067e+04 3.25940084e+04
+ 3.33367239e+04 3.40896386e+04 3.48528393e+04 3.56264142e+04
+ 3.64104529e+04 3.72050462e+04 3.80102860e+04 3.88262656e+04
+ 3.96530795e+04 4.04908237e+04 4.13395956e+04 4.21994938e+04
+ 4.30706184e+04 4.39530709e+04 4.48469542e+04 4.57523726e+04
+ 4.66694317e+04 4.75982385e+04 4.85389017e+04 4.94915309e+04
+ 5.04562375e+04 5.14331342e+04 5.24223350e+04 5.34239554e+04
+ 5.44381123e+04 5.54649231e+04 5.65045034e+04 5.75569687e+04
+ 5.86224357e+04 5.97010221e+04 6.07928464e+04 6.18980280e+04
+ 6.30166871e+04 6.41489450e+04 6.52949234e+04 6.64547452e+04
+ 6.76285337e+04 6.88164131e+04 7.00185081e+04 7.12349441e+04
+ 7.24658471e+04 7.37113434e+04 7.49715600e+04 7.62466241e+04
+ 7.75366635e+04 7.88418043e+04 8.01621652e+04 8.14978627e+04
+ 8.28490127e+04 8.42157300e+04 8.55981287e+04 8.69963218e+04
+ 8.84104213e+04 8.98405379e+04 9.12867808e+04 9.27492580e+04
+ 9.42280757e+04 9.57233385e+04 9.72351491e+04 9.87636082e+04
+ 1.00308814e+05 1.01870864e+05 1.03449851e+05 1.05045866e+05
+ 1.06658999e+05 1.08289328e+05 1.09936902e+05 1.11601756e+05
+ 1.13283923e+05 1.14983425e+05 1.16700282e+05 1.18434504e+05
+ 1.20186097e+05 1.21955059e+05 1.23741379e+05 1.25545043e+05
+ 1.27366025e+05 1.29204292e+05 1.31059806e+05 1.32932517e+05
+ 1.34822368e+05 1.36729294e+05 1.38653221e+05 1.40594065e+05
+ 1.42551733e+05 1.44526123e+05 1.46517124e+05 1.48524615e+05
+ 1.50548465e+05 1.52588533e+05 1.54644669e+05 1.56716711e+05
+ 1.58804490e+05 1.60907825e+05 1.63026524e+05 1.65160389e+05
+ 1.67309208e+05 1.69472761e+05 1.71650819e+05 1.73843145e+05
+ 1.76049489e+05 1.78269598e+05 1.80503205e+05 1.82750042e+05
+ 1.85009828e+05]
+D_Mercier= [            nan -4.13416857e+07 -2.48210373e+06 -4.56694852e+05
+ -1.29580172e+05 -4.51909661e+04 -1.71240661e+04 -6.24653902e+03
+ -1.61988451e+03  4.45888338e+02  1.37172926e+03  1.75955747e+03
+  1.88509611e+03  1.88164545e+03  1.81603005e+03  1.72260631e+03
+  1.61900605e+03  1.51462168e+03  1.41426791e+03  1.32020611e+03
+  1.23327918e+03  1.15346664e+03  1.08054338e+03  1.01410427e+03
+  9.53649376e+02  8.98629767e+02  8.48457754e+02  8.02669307e+02
+  7.60839830e+02  7.22579263e+02  6.87514598e+02  6.55287343e+02
+  6.25624887e+02  5.98283768e+02  5.73044976e+02  5.49695568e+02
+  5.28037253e+02  5.07920362e+02  4.89210179e+02  4.71785053e+02
+  4.55520696e+02  4.40301249e+02  4.26037787e+02  4.12653874e+02
+  4.00079839e+02  3.88239671e+02  3.77069748e+02  3.66520870e+02
+  3.56547871e+02  3.47108863e+02  3.38155086e+02  3.29648721e+02
+  3.21559811e+02  3.13860619e+02  3.06524703e+02  2.99519548e+02
+  2.92821984e+02  2.86413127e+02  2.80275354e+02  2.74391143e+02
+  2.68738151e+02  2.63300300e+02  2.58063857e+02  2.53017386e+02
+  2.48148783e+02  2.43442473e+02  2.38889214e+02  2.34480946e+02
+  2.30210053e+02  2.26067726e+02  2.22042972e+02  2.18129795e+02
+  2.14322769e+02  2.10616744e+02  2.07004998e+02  2.03479794e+02
+  2.00037192e+02  1.96673508e+02  1.93385228e+02  1.90166988e+02
+  1.87013449e+02  1.83921373e+02  1.80887660e+02  1.77909939e+02
+  1.74983816e+02  1.72105779e+02  1.69274113e+02  1.66487175e+02
+  1.63743328e+02  1.61038954e+02  1.58371798e+02  1.55740757e+02
+  1.53144774e+02  1.50582693e+02  1.48051562e+02  1.45550009e+02
+  1.43077371e+02  1.40633013e+02  1.38216089e+02  1.35824236e+02
+  1.33456697e+02  1.31113250e+02  1.28793686e+02  1.26497344e+02
+  1.24222374e+02  1.21968442e+02  1.19735433e+02  1.17523241e+02
+  1.15331323e+02  1.13158293e+02  1.11004113e+02  1.08868842e+02
+  1.06752540e+02  1.04654731e+02  1.02574446e+02  1.00511845e+02
+  9.84671156e+01  9.64404464e+01  9.44313874e+01  9.24393496e+01
+  9.04646198e+01  8.85081013e+01  8.65706569e+01  8.46517939e+01
+  8.27512058e+01  8.08692030e+01  7.90060898e+01  7.71621477e+01
+  7.53369225e+01  7.35303655e+01  7.17428413e+01  6.99747074e+01
+  6.82262689e+01  6.64971399e+01  6.47874600e+01  6.30976321e+01
+  6.14280502e+01  5.97790192e+01  5.81502373e+01  5.65419734e+01
+  5.49546504e+01  5.33893024e+01  5.18467762e+01  5.03267734e+01
+  4.88295527e+01  4.73554492e+01  4.59047815e+01  4.44776900e+01
+  4.30739445e+01  4.16938183e+01  4.03376073e+01  3.90055848e+01
+  3.76978003e+01  3.64140632e+01  3.51546034e+01  3.39196371e+01
+  3.27093501e+01  3.15236603e+01  3.03623743e+01  2.92256167e+01
+  2.81134765e+01  2.70268548e+01  2.59662006e+01  2.49310453e+01
+  2.39211271e+01  2.29361351e+01  2.19757034e+01  2.10391450e+01
+  2.01258625e+01  1.92353731e+01  1.83671378e+01  1.75205459e+01
+  1.66946795e+01  1.58887513e+01  1.51020213e+01  1.43336872e+01
+  1.35828590e+01  1.28483732e+01  1.21292051e+01  1.14243279e+01
+  1.07326475e+01  1.00529638e+01  9.38384034e+00  8.72396787e+00
+  8.07199818e+00  7.42650594e+00  6.78594175e+00  6.14856776e+00
+  5.51271519e+00  4.87663517e+00  4.23847681e+00  3.59621013e+00
+  2.94760576e+00  2.29047647e+00  1.62249800e+00  9.41186654e-01
+  2.43882040e-01 -4.72272585e-01 -1.21035281e+00 -1.97367855e+00
+ -2.76584286e+00]
+iota metrics, max, min, min(abs) 0.923694255222926 0.8181354698170578 0.8181354698170578
+target_mode = 1.05
+
+---------------------------------------
+Optimizing boundary modes M, N <= 4
+---------------------------------------
+Building objective: Mercier Stability
+Precomputing transforms
+Timer: Precomputing transforms = 2.68 sec
+Building objective: aspect ratio
+Precomputing transforms
+Timer: Precomputing transforms = 101 ms
+Building objective: elongation
+Precomputing transforms
+Timer: Precomputing transforms = 2.06 sec
+Building objective: generic
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 2.75 sec
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 332 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 341 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 175 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 177 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 177 ms
+Timer: Objective build = 17.8 sec
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 612 ms
+Timer: Objective build = 1.00 sec
+Timer: Proximal projection build = 29.1 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed-pressure
+Building objective: fixed-iota
+Building objective: fixed-Psi
+Building objective: fixed omnigenity B_max
+Building objective: fixed omnigenity map
+Building objective: custom linear
+Timer: Objective build = 2.39 sec
+Timer: Linear constraint projection build = 3.49 sec
+Number of parameters: 114
+Number of objectives: 3926
+Starting optimization
+Using method: proximal-lsq-exact
+2024-04-06 02:54:41.169038: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 2m22.287972752s
+
+********************************
+[Compiling module jit__jvp] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          3.138e+05                                    1.889e+07   
+       1              5          3.124e+05      1.421e+03      8.837e-05      1.855e+07   
+       2              7          3.115e+05      9.057e+02      4.358e-05      2.518e+08   
+       3             29          3.115e+05      0.000e+00      0.000e+00      2.518e+08   
+Warning: A bad approximation caused failure to predict improvement.
+         Current function value: 3.115e+05
+         Total delta_x: 1.319e-04
+         Iterations: 3
+         Function evaluations: 29
+         Jacobian evaluations: 3
+Timer: Solution time = 22.5 min
+Timer: Avg time per step = 5.63 min
+Start of solver
+Total (sum of squares):  3.138e+05, 
+Maximum Mercier Stability:  2.811e+01 (Wb^-2)
+Minimum Mercier Stability: -2.766e+00 (Wb^-2)
+Average Mercier Stability:  1.583e+01 (Wb^-2)
+Maximum Mercier Stability:  2.141e-01 (normalized)
+Minimum Mercier Stability: -2.106e-02 (normalized)
+Average Mercier Stability:  1.205e-01 (normalized)
+Aspect ratio:  7.323e+00 (dimensionless)
+Elongation:  1.937e+00 (dimensionless)
+Maximum GenericObjective value:  2.108e-01 (m^{-1})
+Minimum GenericObjective value: -1.299e+02 (m^{-1})
+Average GenericObjective value: -9.784e+00 (m^{-1})
+Maximum GenericObjective value:  2.108e-01 (normalized)
+Minimum GenericObjective value: -1.299e+02 (normalized)
+Average GenericObjective value: -9.784e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Omnigenity error:  9.431e-01 (T)
+Minimum absolute Omnigenity error:  1.351e-03 (T)
+Average absolute Omnigenity error:  3.188e-01 (T)
+Maximum absolute Omnigenity error:  6.027e-01 (normalized)
+Minimum absolute Omnigenity error:  8.631e-04 (normalized)
+Average absolute Omnigenity error:  2.037e-01 (normalized)
+Maximum absolute Omnigenity error:  3.731e-01 (T)
+Minimum absolute Omnigenity error:  1.443e-03 (T)
+Average absolute Omnigenity error:  9.800e-02 (T)
+Maximum absolute Omnigenity error:  2.384e-01 (normalized)
+Minimum absolute Omnigenity error:  9.221e-04 (normalized)
+Average absolute Omnigenity error:  6.263e-02 (normalized)
+Maximum absolute Omnigenity error:  4.245e-01 (T)
+Minimum absolute Omnigenity error:  4.812e-04 (T)
+Average absolute Omnigenity error:  7.645e-02 (T)
+Maximum absolute Omnigenity error:  2.713e-01 (normalized)
+Minimum absolute Omnigenity error:  3.075e-04 (normalized)
+Average absolute Omnigenity error:  4.885e-02 (normalized)
+Maximum absolute Omnigenity error:  3.354e-01 (T)
+Minimum absolute Omnigenity error:  2.426e-04 (T)
+Average absolute Omnigenity error:  9.500e-02 (T)
+Maximum absolute Omnigenity error:  2.143e-01 (normalized)
+Minimum absolute Omnigenity error:  1.550e-04 (normalized)
+Average absolute Omnigenity error:  6.071e-02 (normalized)
+Maximum absolute Omnigenity error:  3.188e-01 (T)
+Minimum absolute Omnigenity error:  1.080e-03 (T)
+Average absolute Omnigenity error:  9.009e-02 (T)
+Maximum absolute Omnigenity error:  2.037e-01 (normalized)
+Minimum absolute Omnigenity error:  6.903e-04 (normalized)
+Average absolute Omnigenity error:  5.757e-02 (normalized)
+Maximum absolute Omnigenity error:  3.622e-01 (T)
+Minimum absolute Omnigenity error:  9.813e-04 (T)
+Average absolute Omnigenity error:  1.691e-01 (T)
+Maximum absolute Omnigenity error:  2.314e-01 (normalized)
+Minimum absolute Omnigenity error:  6.271e-04 (normalized)
+Average absolute Omnigenity error:  1.081e-01 (normalized)
+Maximum absolute Force error:  4.663e+02 (N)
+Minimum absolute Force error:  3.570e-03 (N)
+Average absolute Force error:  1.518e+01 (N)
+Maximum absolute Force error:  1.262e-04 (normalized)
+Minimum absolute Force error:  9.663e-10 (normalized)
+Average absolute Force error:  4.110e-06 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed omnigenity B_max error:  0.000e+00 (rad)
+Fixed omnigenity map error:  0.000e+00 (rad)
+Custom linear Objective value:  3.140e-16(Unknown)
+End of solver
+Total (sum of squares):  3.115e+05, 
+Maximum Mercier Stability:  2.824e+01 (Wb^-2)
+Minimum Mercier Stability: -2.768e+00 (Wb^-2)
+Average Mercier Stability:  1.592e+01 (Wb^-2)
+Maximum Mercier Stability:  2.151e-01 (normalized)
+Minimum Mercier Stability: -2.108e-02 (normalized)
+Average Mercier Stability:  1.212e-01 (normalized)
+Aspect ratio:  7.324e+00 (dimensionless)
+Elongation:  1.938e+00 (dimensionless)
+Maximum GenericObjective value:  2.096e-01 (m^{-1})
+Minimum GenericObjective value: -1.300e+02 (m^{-1})
+Average GenericObjective value: -9.784e+00 (m^{-1})
+Maximum GenericObjective value:  2.096e-01 (normalized)
+Minimum GenericObjective value: -1.300e+02 (normalized)
+Average GenericObjective value: -9.784e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Omnigenity error:  9.431e-01 (T)
+Minimum absolute Omnigenity error:  1.367e-03 (T)
+Average absolute Omnigenity error:  3.188e-01 (T)
+Maximum absolute Omnigenity error:  6.026e-01 (normalized)
+Minimum absolute Omnigenity error:  8.737e-04 (normalized)
+Average absolute Omnigenity error:  2.037e-01 (normalized)
+Maximum absolute Omnigenity error:  3.730e-01 (T)
+Minimum absolute Omnigenity error:  1.596e-03 (T)
+Average absolute Omnigenity error:  9.803e-02 (T)
+Maximum absolute Omnigenity error:  2.384e-01 (normalized)
+Minimum absolute Omnigenity error:  1.020e-03 (normalized)
+Average absolute Omnigenity error:  6.265e-02 (normalized)
+Maximum absolute Omnigenity error:  4.244e-01 (T)
+Minimum absolute Omnigenity error:  6.568e-04 (T)
+Average absolute Omnigenity error:  7.648e-02 (T)
+Maximum absolute Omnigenity error:  2.712e-01 (normalized)
+Minimum absolute Omnigenity error:  4.197e-04 (normalized)
+Average absolute Omnigenity error:  4.887e-02 (normalized)
+Maximum absolute Omnigenity error:  3.356e-01 (T)
+Minimum absolute Omnigenity error:  1.431e-04 (T)
+Average absolute Omnigenity error:  9.504e-02 (T)
+Maximum absolute Omnigenity error:  2.144e-01 (normalized)
+Minimum absolute Omnigenity error:  9.146e-05 (normalized)
+Average absolute Omnigenity error:  6.074e-02 (normalized)
+Maximum absolute Omnigenity error:  3.190e-01 (T)
+Minimum absolute Omnigenity error:  7.083e-04 (T)
+Average absolute Omnigenity error:  9.010e-02 (T)
+Maximum absolute Omnigenity error:  2.038e-01 (normalized)
+Minimum absolute Omnigenity error:  4.526e-04 (normalized)
+Average absolute Omnigenity error:  5.758e-02 (normalized)
+Maximum absolute Omnigenity error:  3.621e-01 (T)
+Minimum absolute Omnigenity error:  1.097e-03 (T)
+Average absolute Omnigenity error:  1.691e-01 (T)
+Maximum absolute Omnigenity error:  2.314e-01 (normalized)
+Minimum absolute Omnigenity error:  7.009e-04 (normalized)
+Average absolute Omnigenity error:  1.081e-01 (normalized)
+Maximum absolute Force error:  4.704e+02 (N)
+Minimum absolute Force error:  1.066e-03 (N)
+Average absolute Force error:  1.517e+01 (N)
+Maximum absolute Force error:  1.273e-04 (normalized)
+Minimum absolute Force error:  2.887e-10 (normalized)
+Average absolute Force error:  4.107e-06 (normalized)
+R boundary error:  3.428e-20 (m)
+Z boundary error:  1.272e-19 (m)
+Fixed-pressure profile error:  8.957e-12 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed omnigenity B_max error:  0.000e+00 (rad)
+Fixed omnigenity map error:  0.000e+00 (rad)
+Custom linear Objective value:  3.140e-16(Unknown)
+current= [0.00000000e+00 3.36505650e+00 1.34606081e+01 3.02876272e+01
+ 5.38476265e+01 8.41426693e+01 1.21175379e+02 1.64948946e+02
+ 2.15467140e+02 2.72734316e+02 3.36755421e+02 4.07536003e+02
+ 4.85082219e+02 5.69400837e+02 6.60499247e+02 7.58385465e+02
+ 8.63068137e+02 9.74556545e+02 1.09286061e+03 1.21799091e+03
+ 1.34995864e+03 1.48877569e+03 1.63445457e+03 1.78700847e+03
+ 1.94645122e+03 2.11279732e+03 2.28606194e+03 2.46626091e+03
+ 2.65341072e+03 2.84752852e+03 3.04863215e+03 3.25674008e+03
+ 3.47187148e+03 3.69404614e+03 3.92328454e+03 4.15960783e+03
+ 4.40303777e+03 4.65359682e+03 4.91130805e+03 5.17619522e+03
+ 5.44828270e+03 5.72759562e+03 6.01416039e+03 6.30800430e+03
+ 6.60915546e+03 6.91764278e+03 7.23349599e+03 7.55674563e+03
+ 7.88742306e+03 8.22556049e+03 8.57119093e+03 8.92434823e+03
+ 9.28506710e+03 9.65338305e+03 1.00293325e+04 1.04129526e+04
+ 1.08042814e+04 1.12033579e+04 1.16102219e+04 1.20249139e+04
+ 1.24474754e+04 1.28779490e+04 1.33163785e+04 1.37628092e+04
+ 1.42172872e+04 1.46798596e+04 1.51505746e+04 1.56294813e+04
+ 1.61166299e+04 1.66120717e+04 1.71158588e+04 1.76280447e+04
+ 1.81486835e+04 1.86778308e+04 1.92155430e+04 1.97618776e+04
+ 2.03168931e+04 2.08806494e+04 2.14532071e+04 2.20346282e+04
+ 2.26249754e+04 2.32243131e+04 2.38327072e+04 2.44502252e+04
+ 2.50769355e+04 2.57129082e+04 2.63582141e+04 2.70129258e+04
+ 2.76771169e+04 2.83508621e+04 2.90342378e+04 2.97273213e+04
+ 3.04301914e+04 3.11429284e+04 3.18656134e+04 3.25983294e+04
+ 3.33411603e+04 3.40941917e+04 3.48575102e+04 3.56312042e+04
+ 3.64153630e+04 3.72100776e+04 3.80154398e+04 3.88315430e+04
+ 3.96584816e+04 4.04963517e+04 4.13452506e+04 4.22052769e+04
+ 4.30765309e+04 4.39591139e+04 4.48531290e+04 4.57586803e+04
+ 4.66758736e+04 4.76048159e+04 4.85456157e+04 4.94983830e+04
+ 5.04632291e+04 5.14402666e+04 5.24296097e+04 5.34313739e+04
+ 5.44456760e+04 5.54726337e+04 5.65123623e+04 5.75649777e+04
+ 5.86305966e+04 5.97093366e+04 6.08013162e+04 6.19066550e+04
+ 6.30254733e+04 6.41578923e+04 6.53040339e+04 6.64640208e+04
+ 6.76379766e+04 6.88260254e+04 7.00282920e+04 7.12449017e+04
+ 7.24759807e+04 7.37216552e+04 7.49820523e+04 7.62572993e+04
+ 7.75475237e+04 7.88528518e+04 8.01734022e+04 8.15092915e+04
+ 8.28606353e+04 8.42275486e+04 8.56101452e+04 8.70085382e+04
+ 8.84228393e+04 8.98531591e+04 9.12996068e+04 9.27622901e+04
+ 9.42413150e+04 9.57367859e+04 9.72488053e+04 9.87774736e+04
+ 1.00322889e+05 1.01885148e+05 1.03464343e+05 1.05060565e+05
+ 1.06673904e+05 1.08304437e+05 1.09952212e+05 1.11617265e+05
+ 1.13299626e+05 1.14999319e+05 1.16716361e+05 1.18450763e+05
+ 1.20202529e+05 1.21971657e+05 1.23758136e+05 1.25561948e+05
+ 1.27383068e+05 1.29221463e+05 1.31077092e+05 1.32949905e+05
+ 1.34839844e+05 1.36746842e+05 1.38670823e+05 1.40611703e+05
+ 1.42569387e+05 1.44543773e+05 1.46534747e+05 1.48542186e+05
+ 1.50565958e+05 1.52605921e+05 1.54661922e+05 1.56733799e+05
+ 1.58821379e+05 1.60924481e+05 1.63042911e+05 1.65176467e+05
+ 1.67324938e+05 1.69488101e+05 1.71665724e+05 1.73857568e+05
+ 1.76063383e+05 1.78282911e+05 1.80515886e+05 1.82762034e+05
+ 1.85021077e+05]
+D_Mercier= [            nan -4.11895839e+07 -2.47352455e+06 -4.55304771e+05
+ -1.29274821e+05 -4.51364036e+04 -1.71390813e+04 -6.28082901e+03
+ -1.65755369e+03  4.10055840e+02  1.33928328e+03  1.73072846e+03
+  1.85965045e+03  1.85921077e+03  1.79621977e+03  1.70506480e+03
+  1.60342161e+03  1.50072736e+03  1.40183736e+03  1.30904802e+03
+  1.22323174e+03  1.14439258e+03  1.07232601e+03  1.00664403e+03
+  9.46860976e+02  8.92439772e+02  8.42802622e+02  7.97493900e+02
+  7.56096107e+02  7.18225199e+02  6.83513267e+02  6.51606154e+02
+  6.22235018e+02  5.95159645e+02  5.70163829e+02  5.47037048e+02
+  5.25583108e+02  5.05654203e+02  4.87117248e+02  4.69852025e+02
+  4.53735498e+02  4.38652904e+02  4.24516307e+02  4.11250157e+02
+  3.98785573e+02  3.87047239e+02  3.75972161e+02  3.65511710e+02
+  3.55621233e+02  3.46259307e+02  3.37377581e+02  3.28938613e+02
+  3.20912792e+02  3.13272694e+02  3.05992165e+02  2.99038941e+02
+  2.92390091e+02  2.86026951e+02  2.79932099e+02  2.74088195e+02
+  2.68473062e+02  2.63070773e+02  2.57867740e+02  2.52852659e+02
+  2.48013550e+02  2.43334948e+02  2.38807715e+02  2.34423893e+02
+  2.30175957e+02  2.26055183e+02  2.22050653e+02  2.18156445e+02
+  2.14367206e+02  2.10677850e+02  2.07081713e+02  2.03571116e+02
+  2.00142170e+02  1.96791243e+02  1.93514868e+02  1.90307725e+02
+  1.87164515e+02  1.84082040e+02  1.81057236e+02  1.78087769e+02
+  1.75169277e+02  1.72298277e+02  1.69473087e+02  1.66692091e+02
+  1.63953681e+02  1.61254262e+02  1.58591603e+02  1.55964626e+02
+  1.53372296e+02  1.50813478e+02  1.48285240e+02  1.45786227e+02
+  1.43315797e+02  1.40873332e+02  1.38458003e+02  1.36067461e+02
+  1.33700966e+02  1.31358311e+02  1.29039300e+02  1.26743286e+02
+  1.24468433e+02  1.22214416e+02  1.19981135e+02  1.17768493e+02
+  1.15575959e+02  1.13402158e+02  1.11247058e+02  1.09110731e+02
+  1.06993246e+02  1.04894132e+02  1.02812432e+02  1.00748310e+02
+  9.87019630e+01  9.66735863e+01  9.46627360e+01  9.26688286e+01
+  9.06921569e+01  8.87336302e+01  8.67941168e+01  8.48731285e+01
+  8.29703626e+01  8.10861340e+01  7.92207511e+01  7.73744992e+01
+  7.55469268e+01  7.37379882e+01  7.19480510e+01  7.01774757e+01
+  6.84265702e+01  6.66949502e+01  6.49827575e+01  6.32903973e+01
+  6.16182661e+01  5.99666705e+01  5.83353103e+01  5.67244559e+01
+  5.51345327e+01  5.35665771e+01  5.20214381e+01  5.04988185e+01
+  4.89989795e+01  4.75222582e+01  4.60689756e+01  4.46392745e+01
+  4.32329264e+01  4.18502072e+01  4.04914157e+01  3.91568280e+01
+  3.78464962e+01  3.65602322e+01  3.52982688e+01  3.40608256e+01
+  3.28480914e+01  3.16599869e+01  3.04963211e+01  2.93572217e+01
+  2.82427803e+01  2.71539009e+01  2.60910342e+01  2.50537130e+01
+  2.40416763e+01  2.30546137e+01  2.20921593e+01  2.11536245e+01
+  2.02384098e+01  1.93460298e+01  1.84759418e+01  1.76275303e+01
+  1.67998707e+01  1.59921683e+01  1.52036742e+01  1.44335763e+01
+  1.36809727e+01  1.29446862e+01  1.22236771e+01  1.15169021e+01
+  1.08232491e+01  1.01414982e+01  9.47019101e+00  8.80799558e+00
+  8.15353943e+00  7.50537175e+00  6.86191644e+00  6.22140785e+00
+  5.58214914e+00  4.94236302e+00  4.30017023e+00  3.65351275e+00
+  3.00013399e+00  2.33782121e+00  1.66422673e+00  9.76846069e-01
+  2.73001478e-01 -4.50176974e-01 -1.19577304e+00 -1.96710886e+00
+ -2.76777280e+00]
+iota metrics, max, min, min(abs) 0.923694255222926 0.8181354698170578 0.8181354698170578
+target_mode = 1.05
+
+---------------------------------------
+Optimizing boundary modes M, N <= 5
+---------------------------------------
+Building objective: Mercier Stability
+Precomputing transforms
+Timer: Precomputing transforms = 2.76 sec
+Building objective: aspect ratio
+Precomputing transforms
+Timer: Precomputing transforms = 97.8 ms
+Building objective: elongation
+Precomputing transforms
+Timer: Precomputing transforms = 2.03 sec
+Building objective: generic
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: ideal-ball gamma
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 2.17 sec
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 288 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 230 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 193 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 231 ms
+Building objective: omnigenity
+Precomputing transforms
+Timer: Precomputing transforms = 231 ms
+Timer: Objective build = 16.9 sec
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 623 ms
+Timer: Objective build = 1.45 sec
+Timer: Proximal projection build = 29.4 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed-pressure
+Building objective: fixed-iota
+Building objective: fixed-Psi
+Building objective: fixed omnigenity B_max
+Building objective: fixed omnigenity map
+Building objective: custom linear
+Timer: Objective build = 2.35 sec
+Timer: Linear constraint projection build = 3.60 sec
+Number of parameters: 154
+Number of objectives: 3926
+Starting optimization
+Using method: proximal-lsq-exact
+2024-04-06 03:22:51.090317: E external/xla/xla/service/slow_operation_alarm.cc:65] 
+********************************
+[Compiling module jit__jvp] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+2024-04-06 03:23:18.587786: E external/xla/xla/service/slow_operation_alarm.cc:133] The operation took 2m27.497709778s
+
+********************************
+[Compiling module jit__jvp] Very slow compile? If you want to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+********************************
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          3.324e+05                                    4.583e+08   
+       1              7          3.323e+05      6.856e+01      1.515e-03      2.239e+08   
+       2              8          3.321e+05      1.994e+02      4.116e-04      1.775e+08   
+Optimization terminated successfully.
+`ftol` condition satisfied.
+         Current function value: 3.321e+05
+         Total delta_x: 1.926e-03
+         Iterations: 2
+         Function evaluations: 8
+         Jacobian evaluations: 3
+Timer: Solution time = 13.6 min
+Timer: Avg time per step = 4.56 min
+Start of solver
+Total (sum of squares):  3.324e+05, 
+Maximum Mercier Stability:  2.824e+01 (Wb^-2)
+Minimum Mercier Stability: -2.768e+00 (Wb^-2)
+Average Mercier Stability:  1.592e+01 (Wb^-2)
+Maximum Mercier Stability:  2.151e-01 (normalized)
+Minimum Mercier Stability: -2.108e-02 (normalized)
+Average Mercier Stability:  1.212e-01 (normalized)
+Aspect ratio:  7.324e+00 (dimensionless)
+Elongation:  1.938e+00 (dimensionless)
+Maximum GenericObjective value:  2.096e-01 (m^{-1})
+Minimum GenericObjective value: -1.300e+02 (m^{-1})
+Average GenericObjective value: -9.784e+00 (m^{-1})
+Maximum GenericObjective value:  2.096e-01 (normalized)
+Minimum GenericObjective value: -1.300e+02 (normalized)
+Average GenericObjective value: -9.784e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Omnigenity error:  9.431e-01 (T)
+Minimum absolute Omnigenity error:  1.367e-03 (T)
+Average absolute Omnigenity error:  3.188e-01 (T)
+Maximum absolute Omnigenity error:  6.026e-01 (normalized)
+Minimum absolute Omnigenity error:  8.737e-04 (normalized)
+Average absolute Omnigenity error:  2.037e-01 (normalized)
+Maximum absolute Omnigenity error:  3.730e-01 (T)
+Minimum absolute Omnigenity error:  1.596e-03 (T)
+Average absolute Omnigenity error:  9.803e-02 (T)
+Maximum absolute Omnigenity error:  2.384e-01 (normalized)
+Minimum absolute Omnigenity error:  1.020e-03 (normalized)
+Average absolute Omnigenity error:  6.265e-02 (normalized)
+Maximum absolute Omnigenity error:  4.244e-01 (T)
+Minimum absolute Omnigenity error:  6.568e-04 (T)
+Average absolute Omnigenity error:  7.648e-02 (T)
+Maximum absolute Omnigenity error:  2.712e-01 (normalized)
+Minimum absolute Omnigenity error:  4.197e-04 (normalized)
+Average absolute Omnigenity error:  4.887e-02 (normalized)
+Maximum absolute Omnigenity error:  3.356e-01 (T)
+Minimum absolute Omnigenity error:  1.431e-04 (T)
+Average absolute Omnigenity error:  9.504e-02 (T)
+Maximum absolute Omnigenity error:  2.144e-01 (normalized)
+Minimum absolute Omnigenity error:  9.146e-05 (normalized)
+Average absolute Omnigenity error:  6.074e-02 (normalized)
+Maximum absolute Omnigenity error:  3.190e-01 (T)
+Minimum absolute Omnigenity error:  7.083e-04 (T)
+Average absolute Omnigenity error:  9.010e-02 (T)
+Maximum absolute Omnigenity error:  2.038e-01 (normalized)
+Minimum absolute Omnigenity error:  4.526e-04 (normalized)
+Average absolute Omnigenity error:  5.758e-02 (normalized)
+Maximum absolute Omnigenity error:  3.621e-01 (T)
+Minimum absolute Omnigenity error:  1.097e-03 (T)
+Average absolute Omnigenity error:  1.691e-01 (T)
+Maximum absolute Omnigenity error:  2.314e-01 (normalized)
+Minimum absolute Omnigenity error:  7.009e-04 (normalized)
+Average absolute Omnigenity error:  1.081e-01 (normalized)
+Maximum absolute Force error:  4.704e+02 (N)
+Minimum absolute Force error:  1.066e-03 (N)
+Average absolute Force error:  1.517e+01 (N)
+Maximum absolute Force error:  1.273e-04 (normalized)
+Minimum absolute Force error:  2.887e-10 (normalized)
+Average absolute Force error:  4.107e-06 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed omnigenity B_max error:  0.000e+00 (rad)
+Fixed omnigenity map error:  0.000e+00 (rad)
+Custom linear Objective value:  3.140e-16(Unknown)
+End of solver
+Total (sum of squares):  3.321e+05, 
+Maximum Mercier Stability:  2.824e+01 (Wb^-2)
+Minimum Mercier Stability: -2.774e+00 (Wb^-2)
+Average Mercier Stability:  1.593e+01 (Wb^-2)
+Maximum Mercier Stability:  2.151e-01 (normalized)
+Minimum Mercier Stability: -2.112e-02 (normalized)
+Average Mercier Stability:  1.213e-01 (normalized)
+Aspect ratio:  7.323e+00 (dimensionless)
+Elongation:  1.937e+00 (dimensionless)
+Maximum GenericObjective value:  2.095e-01 (m^{-1})
+Minimum GenericObjective value: -1.300e+02 (m^{-1})
+Average GenericObjective value: -9.783e+00 (m^{-1})
+Maximum GenericObjective value:  2.095e-01 (normalized)
+Minimum GenericObjective value: -1.300e+02 (normalized)
+Average GenericObjective value: -9.783e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Minimum absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Average absolute Ideal-ballooning Stability:  0.000e+00 (normalized)
+Maximum absolute Omnigenity error:  9.422e-01 (T)
+Minimum absolute Omnigenity error:  1.898e-03 (T)
+Average absolute Omnigenity error:  3.187e-01 (T)
+Maximum absolute Omnigenity error:  6.021e-01 (normalized)
+Minimum absolute Omnigenity error:  1.213e-03 (normalized)
+Average absolute Omnigenity error:  2.037e-01 (normalized)
+Maximum absolute Omnigenity error:  3.726e-01 (T)
+Minimum absolute Omnigenity error:  1.447e-03 (T)
+Average absolute Omnigenity error:  9.793e-02 (T)
+Maximum absolute Omnigenity error:  2.381e-01 (normalized)
+Minimum absolute Omnigenity error:  9.246e-04 (normalized)
+Average absolute Omnigenity error:  6.258e-02 (normalized)
+Maximum absolute Omnigenity error:  4.242e-01 (T)
+Minimum absolute Omnigenity error:  4.153e-04 (T)
+Average absolute Omnigenity error:  7.655e-02 (T)
+Maximum absolute Omnigenity error:  2.711e-01 (normalized)
+Minimum absolute Omnigenity error:  2.654e-04 (normalized)
+Average absolute Omnigenity error:  4.892e-02 (normalized)
+Maximum absolute Omnigenity error:  3.362e-01 (T)
+Minimum absolute Omnigenity error:  3.727e-04 (T)
+Average absolute Omnigenity error:  9.488e-02 (T)
+Maximum absolute Omnigenity error:  2.148e-01 (normalized)
+Minimum absolute Omnigenity error:  2.382e-04 (normalized)
+Average absolute Omnigenity error:  6.063e-02 (normalized)
+Maximum absolute Omnigenity error:  3.194e-01 (T)
+Minimum absolute Omnigenity error:  1.416e-04 (T)
+Average absolute Omnigenity error:  9.009e-02 (T)
+Maximum absolute Omnigenity error:  2.041e-01 (normalized)
+Minimum absolute Omnigenity error:  9.052e-05 (normalized)
+Average absolute Omnigenity error:  5.757e-02 (normalized)
+Maximum absolute Omnigenity error:  3.624e-01 (T)
+Minimum absolute Omnigenity error:  1.082e-03 (T)
+Average absolute Omnigenity error:  1.692e-01 (T)
+Maximum absolute Omnigenity error:  2.316e-01 (normalized)
+Minimum absolute Omnigenity error:  6.913e-04 (normalized)
+Average absolute Omnigenity error:  1.081e-01 (normalized)
+Maximum absolute Force error:  4.674e+02 (N)
+Minimum absolute Force error:  6.106e-04 (N)
+Average absolute Force error:  1.518e+01 (N)
+Maximum absolute Force error:  1.265e-04 (normalized)
+Minimum absolute Force error:  1.653e-10 (normalized)
+Average absolute Force error:  4.109e-06 (normalized)
+R boundary error:  1.110e-16 (m)
+Z boundary error:  5.448e-20 (m)
+Fixed-pressure profile error:  9.376e-13 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed omnigenity B_max error:  0.000e+00 (rad)
+Fixed omnigenity map error:  0.000e+00 (rad)
+Custom linear Objective value:  3.140e-16(Unknown)
+current= [0.00000000e+00 3.36642629e+00 1.34660870e+01 3.02999536e+01
+ 5.38695375e+01 8.41768999e+01 1.21224661e+02 1.65016009e+02
+ 2.15554710e+02 2.72845113e+02 3.36892161e+02 4.07701396e+02
+ 4.85278967e+02 5.69631638e+02 6.60766788e+02 7.58692425e+02
+ 8.63417187e+02 9.74950344e+02 1.09330181e+03 1.21848214e+03
+ 1.35050253e+03 1.48937484e+03 1.63511158e+03 1.78772592e+03
+ 1.94723166e+03 2.11364331e+03 2.28697599e+03 2.46724553e+03
+ 2.65446838e+03 2.84866169e+03 3.04984326e+03 3.25803153e+03
+ 3.47324565e+03 3.69550539e+03 3.92483119e+03 4.16124415e+03
+ 4.40476604e+03 4.65541924e+03 4.91322683e+03 5.17821249e+03
+ 5.45040056e+03 5.72981616e+03 6.01648562e+03 6.31043619e+03
+ 6.61169595e+03 6.92029375e+03 7.23625927e+03 7.55962301e+03
+ 7.89041628e+03 8.22867120e+03 8.57442076e+03 8.92769874e+03
+ 9.28853977e+03 9.65697933e+03 1.00330537e+04 1.04168001e+04
+ 1.08082565e+04 1.12074617e+04 1.16144554e+04 1.20292782e+04
+ 1.24519715e+04 1.28825776e+04 1.33211406e+04 1.37677055e+04
+ 1.42223182e+04 1.46850260e+04 1.51558767e+04 1.56349196e+04
+ 1.61222047e+04 1.66177831e+04 1.71217070e+04 1.76340297e+04
+ 1.81548053e+04 1.86840891e+04 1.92219376e+04 1.97684082e+04
+ 2.03235593e+04 2.08874506e+04 2.14601427e+04 2.20416973e+04
+ 2.26321772e+04 2.32316467e+04 2.38401715e+04 2.44578190e+04
+ 2.50846576e+04 2.57207572e+04 2.63661885e+04 2.70210240e+04
+ 2.76853371e+04 2.83592026e+04 2.90426966e+04 2.97358964e+04
+ 3.04388806e+04 3.11517293e+04 3.18745237e+04 3.26073465e+04
+ 3.33502816e+04 3.41034143e+04 3.48668313e+04 3.56406206e+04
+ 3.64248717e+04 3.72196752e+04 3.80251229e+04 3.88413079e+04
+ 3.96683247e+04 4.05062690e+04 4.13552382e+04 4.22153306e+04
+ 4.30866463e+04 4.39692867e+04 4.48633543e+04 4.57689535e+04
+ 4.66861896e+04 4.76151696e+04 4.85560019e+04 4.95087961e+04
+ 5.04736634e+04 5.14507162e+04 5.24400686e+04 5.34418358e+04
+ 5.44561345e+04 5.54830820e+04 5.65227937e+04 5.75753849e+04
+ 5.86409723e+04 5.97196733e+04 6.08116061e+04 6.19168901e+04
+ 6.30356453e+04 6.41679926e+04 6.53140537e+04 6.64739511e+04
+ 6.76478080e+04 6.88357483e+04 7.00378966e+04 7.12543778e+04
+ 7.24853177e+04 7.37308424e+04 7.49910786e+04 7.62661533e+04
+ 7.75561937e+04 7.88613257e+04 8.01816676e+04 8.15173357e+04
+ 8.28684453e+04 8.42351109e+04 8.56174461e+04 8.70155635e+04
+ 8.84295746e+04 8.98595894e+04 9.13057169e+04 9.27680643e+04
+ 9.42467373e+04 9.57418399e+04 9.72534740e+04 9.87817398e+04
+ 1.00326735e+05 1.01888555e+05 1.03467294e+05 1.05063040e+05
+ 1.06675883e+05 1.08305901e+05 1.09953140e+05 1.11617636e+05
+ 1.13299419e+05 1.14998512e+05 1.16714931e+05 1.18448688e+05
+ 1.20199785e+05 1.21968219e+05 1.23753979e+05 1.25557047e+05
+ 1.27377397e+05 1.29214996e+05 1.31069800e+05 1.32941760e+05
+ 1.34830817e+05 1.36736904e+05 1.38659943e+05 1.40599849e+05
+ 1.42556527e+05 1.44529873e+05 1.46519773e+05 1.48526103e+05
+ 1.50548729e+05 1.52587509e+05 1.54642289e+05 1.56712904e+05
+ 1.58799182e+05 1.60900939e+05 1.63017981e+05 1.65150104e+05
+ 1.67297095e+05 1.69458730e+05 1.71634777e+05 1.73824993e+05
+ 1.76029129e+05 1.78246923e+05 1.80478109e+05 1.82722411e+05
+ 1.84979548e+05]
+D_Mercier= [            nan -4.15806231e+07 -2.49876577e+06 -4.60553955e+05
+ -1.31052171e+05 -4.59256793e+04 -1.75557875e+04 -6.52874203e+03
+ -1.81840142e+03  2.98670701e+02  1.25817336e+03  1.66927808e+03
+  1.81159196e+03  1.82064110e+03  1.76459788e+03  1.67867310e+03
+  1.58106121e+03  1.48153794e+03  1.38518650e+03  1.29446086e+03
+  1.21034508e+03  1.13292396e+03  1.06205249e+03  9.97387334e+02
+  9.38476800e+02  8.84810070e+02  8.35829880e+02  7.91096836e+02
+  7.50206416e+02  7.12785047e+02  6.78473355e+02  6.46924195e+02
+  6.17874520e+02  5.91088942e+02  5.66355309e+02  5.43466518e+02
+  5.22229284e+02  5.02498277e+02  4.84142534e+02  4.67043667e+02
+  4.51080229e+02  4.36138837e+02  4.22132753e+02  4.08987481e+02
+  3.96635064e+02  3.85001009e+02  3.74023046e+02  3.63653187e+02
+  3.53847350e+02  3.44564620e+02  3.35757108e+02  3.27387782e+02
+  3.19427398e+02  3.11848864e+02  3.04626325e+02  2.97727792e+02
+  2.91130581e+02  2.84816251e+02  2.78767582e+02  2.72967421e+02
+  2.67393762e+02  2.62030835e+02  2.56865194e+02  2.51885664e+02
+  2.47080384e+02  2.42434005e+02  2.37937490e+02  2.33582974e+02
+  2.29363018e+02  2.25268979e+02  2.21290016e+02  2.17420276e+02
+  2.13654469e+02  2.09987567e+02  2.06412965e+02  2.02923034e+02
+  1.99513935e+02  1.96182079e+02  1.92924041e+02  1.89734540e+02
+  1.86608317e+02  1.83542206e+02  1.80533176e+02  1.77578922e+02
+  1.74675113e+02  1.71818292e+02  1.69006803e+02  1.66239052e+02
+  1.63513453e+02  1.60826434e+02  1.58175784e+02  1.55560445e+02
+  1.52979397e+02  1.50431521e+02  1.47913905e+02  1.45425208e+02
+  1.42964803e+02  1.40532084e+02  1.38126234e+02  1.35744921e+02
+  1.33387414e+02  1.31053518e+02  1.28743047e+02  1.26455365e+02
+  1.24188644e+02  1.21942573e+02  1.19717057e+02  1.17512008e+02
+  1.15326904e+02  1.13160378e+02  1.11012407e+02  1.08883067e+02
+  1.06772434e+02  1.04680046e+02  1.02604949e+02  1.00547316e+02
+  9.85073475e+01  9.64852432e+01  9.44805647e+01  9.24927338e+01
+  9.05220467e+01  8.85694156e+01  8.66357109e+01  8.47204482e+01
+  8.28233279e+01  8.09446670e+01  7.90847755e+01  7.72439402e+01
+  7.54217118e+01  7.36180457e+01  7.18333101e+01  7.00678654e+01
+  6.83220197e+01  6.65953890e+01  6.48881148e+01  6.32006012e+01
+  6.15332434e+01  5.98863467e+01  5.82596099e+01  5.66533018e+01
+  5.50678454e+01  5.35042740e+01  5.19634334e+01  5.04450246e+01
+  4.89493058e+01  4.74766119e+01  4.60272610e+01  4.46013932e+01
+  4.31987780e+01  4.18196887e+01  4.04644215e+01  3.91332502e+01
+  3.78262248e+01  3.65431557e+01  3.52842737e+01  3.40497970e+01
+  3.28399129e+01  3.16545415e+01  3.04934911e+01  2.93568891e+01
+  2.82448271e+01  2.71582072e+01  2.60974791e+01  2.50621762e+01
+  2.40520385e+01  2.30667571e+01  2.21059673e+01  2.11689821e+01
+  2.02552039e+01  1.93641489e+01  1.84952761e+01  1.76479716e+01
+  1.68213123e+01  1.60145045e+01  1.52268003e+01  1.44573877e+01
+  1.37053649e+01  1.29695537e+01  1.22489132e+01  1.15423977e+01
+  1.08488922e+01  1.01671727e+01  9.49577608e+00  8.83336442e+00
+  8.17855855e+00  7.52990000e+00  6.88580416e+00  6.24449610e+00
+  5.60426911e+00  4.96333572e+00  4.31980630e+00  3.67161263e+00
+  3.01648836e+00  2.35221217e+00  1.67642930e+00  9.86630398e-01
+  2.80135736e-01 -4.45922892e-01 -1.19462286e+00 -1.96927424e+00
+ -2.77344644e+00]
+iota metrics, max, min, min(abs) 0.923694255222926 0.8181354698170578 0.8181354698170578
+target_mode = 1.05
+================
+Step 1
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(6,6,0)
+Node resolution (L,M,N)=(12,12,0)
+Boundary ratio = 0
+Pressure ratio = 0
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 5.71 sec
+Timer: Objective build = 8.93 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed-Psi
+Building objective: fixed-pressure
+Building objective: fixed-iota
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 5.91 sec
+Timer: Linear constraint projection build = 4.99 sec
+Number of parameters: 27
+Number of objectives: 98
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          5.365e-02                                    2.100e+01   
+       1              2          9.558e-04      5.269e-02      2.773e-01      2.308e+00   
+       2              3          4.399e-06      9.514e-04      5.215e-02      4.984e-01   
+       3              4          2.805e-06      1.593e-06      1.035e-01      2.067e-01   
+       4              5          1.344e-07      2.671e-06      8.725e-03      1.602e-02   
+       5              6          1.527e-08      1.191e-07      1.947e-03      7.577e-04   
+       6              7          1.498e-08      2.874e-10      3.038e-03      3.524e-04   
+       7              8          1.497e-08      1.622e-11      6.040e-04      3.040e-05   
+       8              9          1.497e-08      7.379e-13      1.721e-04      1.446e-06   
+`gtol` condition satisfied.
+         Current function value: 1.497e-08
+         Total delta_x: 4.158e-01
+         Iterations: 8
+         Function evaluations: 9
+         Jacobian evaluations: 9
+Timer: Solution time = 9.89 sec
+Timer: Avg time per step = 1.09 sec
+Start of solver
+Total (sum of squares):  5.365e-02, 
+Maximum absolute Force error:  8.549e+04 (N)
+Minimum absolute Force error:  8.562e+01 (N)
+Average absolute Force error:  1.868e+04 (N)
+Maximum absolute Force error:  2.314e-02 (normalized)
+Minimum absolute Force error:  2.318e-05 (normalized)
+Average absolute Force error:  5.055e-03 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+End of solver
+Total (sum of squares):  1.497e-08, 
+Maximum absolute Force error:  1.070e+02 (N)
+Minimum absolute Force error:  1.501e-02 (N)
+Average absolute Force error:  8.645e+00 (N)
+Maximum absolute Force error:  2.897e-05 (normalized)
+Minimum absolute Force error:  4.063e-09 (normalized)
+Average absolute Force error:  2.340e-06 (normalized)
+R boundary error:  2.776e-17 (m)
+Z boundary error:  1.694e-21 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Timer: Iteration 1 total = 33.4 sec
+================
+Step 2
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(12,12,0)
+Node resolution (L,M,N)=(24,24,0)
+Boundary ratio = 0
+Pressure ratio = 0
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Perturbing equilibrium
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 6.66 sec
+Timer: Objective build = 15.2 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed-Psi
+Building objective: fixed-pressure
+Building objective: fixed-iota
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 5.24 sec
+Perturbing Rb_lmn, Zb_lmn
+Factorizing linear constraints
+Timer: linear constraint factorize = 3.70 sec
+Computing df
+Timer: df computation = 7.19 sec
+Factoring df
+Timer: df/dx factorization = 95.2 ms
+Computing d^2f
+Timer: d^2f computation = 3.71 sec
+Timer: Objective build = 11.1 ms
+||dx||/||x|| =  4.121e-02
+Timer: Total perturbation = 20.3 sec
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 29.5 ms
+Timer: Linear constraint projection build = 1.27 sec
+Number of parameters: 108
+Number of objectives: 338
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          2.399e-04                                    1.110e+01   
+       1              2          3.801e-05      2.019e-04      3.230e-02      6.885e+00   
+       2              3          1.442e-05      2.359e-05      2.351e-02      4.230e+00   
+       3              4          3.715e-07      1.405e-05      1.038e-02      8.413e-01   
+       4              5          2.286e-08      3.487e-07      5.132e-03      2.030e-01   
+       5              6          9.626e-10      2.189e-08      2.832e-03      1.374e-02   
+       6              8          7.053e-11      8.921e-10      7.328e-04      9.570e-03   
+       7             10          1.208e-11      5.845e-11      3.977e-04      4.167e-04   
+       8             12          9.946e-12      2.130e-12      2.402e-04      7.152e-04   
+       9             14          9.523e-12      4.234e-13      1.268e-04      1.242e-04   
+      10             15          9.501e-12      2.165e-14      2.217e-04      8.980e-04   
+      11             16          9.195e-12      3.058e-13      5.677e-05      5.448e-05   
+      12             17          9.094e-12      1.017e-13      1.075e-04      2.363e-04   
+      13             18          9.093e-12      7.366e-16      2.216e-04      9.403e-04   
+      14             19          8.797e-12      2.965e-13      5.401e-05      5.837e-05   
+      15             20          8.702e-12      9.476e-14      1.069e-04      2.329e-04   
+      16             21          8.687e-12      1.456e-14      2.215e-04      8.998e-04   
+      17             22          8.415e-12      2.721e-13      5.352e-05      5.444e-05   
+      18             23          8.322e-12      9.340e-14      1.074e-04      2.202e-04   
+      19             24          8.289e-12      3.256e-14      2.220e-04      8.500e-04   
+      20             25          8.045e-12      2.441e-13      5.299e-05      5.133e-05   
+      21             26          7.956e-12      8.915e-14      1.086e-04      2.102e-04   
+      22             27          7.925e-12      3.055e-14      2.231e-04      8.214e-04   
+      23             28          7.703e-12      2.225e-13      5.320e-05      5.089e-05   
+      24             29          7.625e-12      7.755e-14      1.101e-04      2.057e-04   
+      25             30          7.615e-12      1.000e-14      2.218e-04      8.049e-04   
+      26             31          7.414e-12      2.017e-13      5.318e-05      4.817e-05   
+      27             32          7.355e-12      5.913e-14      1.087e-04      2.008e-04   
+      28             34          7.311e-12      4.305e-14      5.276e-05      4.771e-05   
+      29             35          7.261e-12      5.017e-14      1.064e-04      1.962e-04   
+      30             37          7.224e-12      3.742e-14      5.072e-05      4.609e-05   
+      31             38          7.182e-12      4.174e-14      1.002e-04      1.864e-04   
+      32             40          7.150e-12      3.170e-14      4.671e-05      4.271e-05   
+      33             41          7.116e-12      3.489e-14      9.021e-05      1.683e-04   
+      34             42          7.109e-12      6.581e-15      1.519e-04      5.382e-04   
+      35             43          7.022e-12      8.714e-14      3.503e-05      2.538e-05   
+      36             44          6.995e-12      2.715e-14      6.828e-05      1.037e-04   
+      37             45          6.959e-12      3.551e-14      1.369e-04      2.943e-04   
+      38             46          6.899e-12      5.973e-14      1.453e-04      2.252e-04   
+      39             48          6.859e-12      4.061e-14      7.753e-05      4.689e-05   
+      40             49          6.820e-12      3.881e-14      1.544e-04      1.913e-04   
+      41             51          6.783e-12      3.657e-14      8.198e-05      3.809e-05   
+      42             52          6.744e-12      3.931e-14      1.610e-04      1.712e-04   
+      43             54          6.710e-12      3.427e-14      8.338e-05      3.649e-05   
+      44             55          6.670e-12      3.947e-14      1.648e-04      1.612e-04   
+      45             57          6.638e-12      3.279e-14      8.318e-05      3.780e-05   
+      46             58          6.598e-12      3.929e-14      1.676e-04      1.552e-04   
+      47             60          6.567e-12      3.145e-14      8.218e-05      4.140e-05   
+      48             61          6.528e-12      3.861e-14      1.703e-04      1.479e-04   
+      49             63          6.499e-12      2.952e-14      8.095e-05      4.819e-05   
+      50             64          6.462e-12      3.647e-14      1.737e-04      1.397e-04   
+      51             65          6.433e-12      2.897e-14      1.568e-04      2.171e-04   
+      52             66          6.383e-12      5.019e-14      1.842e-04      1.383e-04   
+      53             67          6.380e-12      3.316e-15      1.541e-04      2.773e-04   
+      54             68          6.315e-12      6.479e-14      5.169e-05      1.501e-05   
+      55             69          6.301e-12      1.386e-14      4.585e-05      8.280e-06   
+`gtol` condition satisfied.
+         Current function value: 6.301e-12
+         Total delta_x: 6.620e-02
+         Iterations: 55
+         Function evaluations: 69
+         Jacobian evaluations: 56
+Timer: Solution time = 12.6 sec
+Timer: Avg time per step = 225 ms
+Start of solver
+Total (sum of squares):  2.399e-04, 
+Maximum absolute Force error:  3.628e+04 (N)
+Minimum absolute Force error:  7.550e-03 (N)
+Average absolute Force error:  8.116e+02 (N)
+Maximum absolute Force error:  9.821e-03 (normalized)
+Minimum absolute Force error:  2.044e-09 (normalized)
+Average absolute Force error:  2.197e-04 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+End of solver
+Total (sum of squares):  6.301e-12, 
+Maximum absolute Force error:  2.727e+00 (N)
+Minimum absolute Force error:  6.219e-04 (N)
+Average absolute Force error:  1.544e-01 (N)
+Maximum absolute Force error:  7.383e-07 (normalized)
+Minimum absolute Force error:  1.683e-10 (normalized)
+Average absolute Force error:  4.178e-08 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  1.388e-17 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Timer: Iteration 2 total = 59.5 sec
+================
+Step 3
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(14,14,0)
+Node resolution (L,M,N)=(28,28,0)
+Boundary ratio = 0
+Pressure ratio = 0
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 5.76 sec
+Timer: Objective build = 8.39 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed-Psi
+Building objective: fixed-pressure
+Building objective: fixed-iota
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 6.79 sec
+Timer: Linear constraint projection build = 4.29 sec
+Number of parameters: 147
+Number of objectives: 450
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          5.360e-12                                    1.216e-03   
+       1              5          3.538e-12      1.822e-12      2.575e-04      2.596e-03   
+       2              6          3.065e-12      4.727e-13      2.759e-04      1.757e-03   
+       3              7          9.557e-13      2.110e-12      8.632e-05      1.770e-04   
+       4              9          8.248e-13      1.309e-13      5.126e-05      3.341e-05   
+       5             10          7.555e-13      6.924e-14      6.262e-05      2.103e-04   
+       6             11          6.576e-13      9.790e-14      7.061e-05      1.627e-04   
+       7             13          6.180e-13      3.962e-14      3.549e-05      5.326e-05   
+       8             14          5.728e-13      4.518e-14      7.467e-05      2.129e-04   
+       9             16          5.327e-13      4.006e-14      4.263e-05      3.931e-05   
+      10             17          5.083e-13      2.449e-14      8.238e-05      2.223e-04   
+      11             18          4.677e-13      4.055e-14      8.981e-05      1.998e-04   
+      12             20          4.457e-13      2.197e-14      4.628e-05      5.272e-05   
+      13             21          4.350e-13      1.071e-14      8.304e-05      2.156e-04   
+      14             22          4.159e-13      1.911e-14      7.935e-05      2.228e-04   
+      15             23          4.023e-13      1.365e-14      7.181e-05      2.256e-04   
+      16             24          3.905e-13      1.181e-14      6.614e-05      2.222e-04   
+      17             25          3.806e-13      9.842e-15      6.375e-05      2.124e-04   
+      18             26          3.721e-13      8.553e-15      6.462e-05      1.946e-04   
+      19             27          3.646e-13      7.446e-15      6.748e-05      1.722e-04   
+      20             28          3.580e-13      6.601e-15      7.091e-05      1.489e-04   
+      21             29          3.520e-13      5.983e-15      7.408e-05      1.272e-04   
+      22             31          3.477e-13      4.317e-15      3.825e-05      2.777e-05   
+      23             32          3.438e-13      3.911e-15      7.768e-05      1.007e-04   
+      24             34          3.400e-13      3.765e-15      3.991e-05      2.140e-05   
+      25             35          3.361e-13      3.968e-15      8.042e-05      7.866e-05   
+      26             37          3.326e-13      3.481e-15      4.095e-05      1.688e-05   
+      27             38          3.286e-13      3.989e-15      8.212e-05      6.247e-05   
+      28             40          3.252e-13      3.366e-15      4.154e-05      1.370e-05   
+      29             41          3.212e-13      4.006e-15      8.303e-05      5.111e-05   
+      30             43          3.179e-13      3.333e-15      4.179e-05      1.164e-05   
+      31             44          3.139e-13      4.024e-15      8.336e-05      4.381e-05   
+      32             46          3.106e-13      3.322e-15      4.182e-05      1.045e-05   
+      33             47          3.065e-13      4.022e-15      8.330e-05      3.972e-05   
+      34             49          3.032e-13      3.287e-15      4.172e-05      9.878e-06   
+`gtol` condition satisfied.
+         Current function value: 3.032e-13
+         Total delta_x: 1.573e-03
+         Iterations: 34
+         Function evaluations: 49
+         Jacobian evaluations: 35
+Timer: Solution time = 10.5 sec
+Timer: Avg time per step = 300 ms
+Start of solver
+Total (sum of squares):  5.360e-12, 
+Maximum absolute Force error:  3.560e+00 (N)
+Minimum absolute Force error:  7.227e-05 (N)
+Average absolute Force error:  1.384e-01 (N)
+Maximum absolute Force error:  9.636e-07 (normalized)
+Minimum absolute Force error:  1.956e-11 (normalized)
+Average absolute Force error:  3.746e-08 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+End of solver
+Total (sum of squares):  3.032e-13, 
+Maximum absolute Force error:  8.471e-01 (N)
+Minimum absolute Force error:  1.138e-04 (N)
+Average absolute Force error:  4.096e-02 (N)
+Maximum absolute Force error:  2.293e-07 (normalized)
+Minimum absolute Force error:  3.081e-11 (normalized)
+Average absolute Force error:  1.109e-08 (normalized)
+R boundary error:  2.776e-17 (m)
+Z boundary error:  1.388e-17 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Timer: Iteration 3 total = 41.0 sec
+================
+Step 4
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(14,14,0)
+Node resolution (L,M,N)=(28,28,0)
+Boundary ratio = 0
+Pressure ratio = 0.2
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Perturbing equilibrium
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 210 ms
+Timer: Objective build = 424 ms
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed-Psi
+Building objective: fixed-pressure
+Building objective: fixed-iota
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 878 ms
+Perturbing p_l
+Factorizing linear constraints
+Timer: linear constraint factorize = 1.13 sec
+Computing df
+Timer: df computation = 7.77 sec
+Factoring df
+Timer: df/dx factorization = 13.3 ms
+Computing d^2f
+Timer: d^2f computation = 4.07 sec
+Timer: Objective build = 8.69 ms
+||dx||/||x|| =  4.087e-02
+Timer: Total perturbation = 18.2 sec
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 29.2 ms
+Timer: Linear constraint projection build = 1.27 sec
+Number of parameters: 147
+Number of objectives: 450
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          3.205e-07                                    5.742e-01   
+       1              2          6.425e-10      3.199e-07      1.955e-03      1.877e-02   
+       2              4          3.556e-10      2.869e-10      9.675e-04      3.194e-02   
+       3              5          9.550e-11      2.601e-10      1.482e-03      1.480e-02   
+       4              7          4.022e-12      9.148e-11      4.227e-04      5.465e-03   
+       5              9          2.190e-13      3.803e-12      1.851e-04      5.212e-04   
+       6             11          1.840e-13      3.495e-14      8.361e-05      4.479e-04   
+       7             12          1.620e-13      2.206e-14      9.278e-05      4.238e-05   
+       8             14          1.605e-13      1.492e-15      4.276e-05      9.902e-05   
+       9             15          1.589e-13      1.609e-15      4.762e-05      7.112e-06   
+`gtol` condition satisfied.
+         Current function value: 1.589e-13
+         Total delta_x: 3.271e-03
+         Iterations: 9
+         Function evaluations: 15
+         Jacobian evaluations: 10
+Timer: Solution time = 5.19 sec
+Timer: Avg time per step = 519 ms
+Start of solver
+Total (sum of squares):  3.205e-07, 
+Maximum absolute Force error:  7.457e+02 (N)
+Minimum absolute Force error:  2.120e-02 (N)
+Average absolute Force error:  3.754e+01 (N)
+Maximum absolute Force error:  2.019e-04 (normalized)
+Minimum absolute Force error:  5.739e-09 (normalized)
+Average absolute Force error:  1.016e-05 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+End of solver
+Total (sum of squares):  1.589e-13, 
+Maximum absolute Force error:  6.136e-01 (N)
+Minimum absolute Force error:  3.215e-04 (N)
+Average absolute Force error:  3.014e-02 (N)
+Maximum absolute Force error:  1.661e-07 (normalized)
+Minimum absolute Force error:  8.703e-11 (normalized)
+Average absolute Force error:  8.159e-09 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  1.592e-12 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Timer: Iteration 4 total = 28.6 sec
+================
+Step 5
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(14,14,0)
+Node resolution (L,M,N)=(28,28,0)
+Boundary ratio = 0
+Pressure ratio = 0.4
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Perturbing equilibrium
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 214 ms
+Timer: Objective build = 430 ms
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed-Psi
+Building objective: fixed-pressure
+Building objective: fixed-iota
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 893 ms
+Perturbing p_l
+Factorizing linear constraints
+Timer: linear constraint factorize = 1.15 sec
+Computing df
+Timer: df computation = 7.77 sec
+Factoring df
+Timer: df/dx factorization = 12.3 ms
+Computing d^2f
+Timer: d^2f computation = 3.59 sec
+Timer: Objective build = 8.75 ms
+||dx||/||x|| =  4.296e-02
+Timer: Total perturbation = 13.9 sec
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 32.3 ms
+Timer: Linear constraint projection build = 1.38 sec
+Number of parameters: 147
+Number of objectives: 450
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          2.718e-07                                    8.632e-01   
+       1              2          1.605e-10      2.716e-07      1.629e-03      2.776e-02   
+       2              4          1.095e-10      5.094e-11      1.778e-03      2.921e-03   
+       3              5          8.304e-11      2.650e-11      1.883e-03      8.671e-03   
+       4              6          3.195e-13      8.272e-11      3.963e-04      2.793e-04   
+       5              8          1.998e-13      1.197e-13      2.577e-04      3.309e-04   
+       6              9          1.773e-13      2.246e-14      2.563e-04      1.733e-04   
+       7             10          1.705e-13      6.837e-15      2.540e-04      1.420e-04   
+       8             11          1.408e-13      2.973e-14      6.628e-05      8.156e-06   
+`gtol` condition satisfied.
+         Current function value: 1.408e-13
+         Total delta_x: 5.649e-03
+         Iterations: 8
+         Function evaluations: 11
+         Jacobian evaluations: 9
+Timer: Solution time = 4.72 sec
+Timer: Avg time per step = 524 ms
+Start of solver
+Total (sum of squares):  2.718e-07, 
+Maximum absolute Force error:  7.888e+02 (N)
+Minimum absolute Force error:  1.914e-02 (N)
+Average absolute Force error:  3.177e+01 (N)
+Maximum absolute Force error:  2.135e-04 (normalized)
+Minimum absolute Force error:  5.182e-09 (normalized)
+Average absolute Force error:  8.601e-06 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+End of solver
+Total (sum of squares):  1.408e-13, 
+Maximum absolute Force error:  4.970e-01 (N)
+Minimum absolute Force error:  1.804e-04 (N)
+Average absolute Force error:  2.822e-02 (N)
+Maximum absolute Force error:  1.345e-07 (normalized)
+Minimum absolute Force error:  4.882e-11 (normalized)
+Average absolute Force error:  7.640e-09 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  2.612e-12 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Timer: Iteration 5 total = 23.9 sec
+================
+Step 6
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(14,14,0)
+Node resolution (L,M,N)=(28,28,0)
+Boundary ratio = 0
+Pressure ratio = 0.6000000000000001
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Perturbing equilibrium
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 217 ms
+Timer: Objective build = 436 ms
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed-Psi
+Building objective: fixed-pressure
+Building objective: fixed-iota
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 884 ms
+Perturbing p_l
+Factorizing linear constraints
+Timer: linear constraint factorize = 1.15 sec
+Computing df
+Timer: df computation = 7.13 sec
+Factoring df
+Timer: df/dx factorization = 13.1 ms
+Computing d^2f
+Timer: d^2f computation = 3.88 sec
+Timer: Objective build = 9.20 ms
+||dx||/||x|| =  2.040e-02
+Timer: Total perturbation = 13.5 sec
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 30.7 ms
+Timer: Linear constraint projection build = 1.30 sec
+Number of parameters: 147
+Number of objectives: 450
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          1.826e-06                                    2.757e+00   
+       1              2          1.592e-09      1.825e-06      3.178e-03      6.803e-02   
+       2              3          5.540e-10      1.038e-09      2.776e-03      1.468e-02   
+       3              5          2.614e-11      5.278e-10      5.569e-04      1.275e-02   
+       4              7          4.133e-13      2.572e-11      3.992e-04      8.448e-04   
+       5              9          1.590e-13      2.544e-13      2.036e-04      3.424e-04   
+       6             11          1.372e-13      2.171e-14      1.070e-04      4.438e-05   
+       7             13          1.363e-13      9.037e-16      5.429e-05      1.190e-05   
+       8             15          1.363e-13      6.524e-17      2.746e-05      2.621e-06   
+`gtol` condition satisfied.
+         Current function value: 1.363e-13
+         Total delta_x: 6.464e-03
+         Iterations: 8
+         Function evaluations: 15
+         Jacobian evaluations: 9
+Timer: Solution time = 4.85 sec
+Timer: Avg time per step = 539 ms
+Start of solver
+Total (sum of squares):  1.826e-06, 
+Maximum absolute Force error:  2.601e+03 (N)
+Minimum absolute Force error:  4.582e-02 (N)
+Average absolute Force error:  7.580e+01 (N)
+Maximum absolute Force error:  7.040e-04 (normalized)
+Minimum absolute Force error:  1.240e-08 (normalized)
+Average absolute Force error:  2.052e-05 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  0.000e+00 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+End of solver
+Total (sum of squares):  1.363e-13, 
+Maximum absolute Force error:  5.519e-01 (N)
+Minimum absolute Force error:  4.281e-05 (N)
+Average absolute Force error:  2.787e-02 (N)
+Maximum absolute Force error:  1.494e-07 (normalized)
+Minimum absolute Force error:  1.159e-11 (normalized)
+Average absolute Force error:  7.544e-09 (normalized)
+R boundary error:  0.000e+00 (m)
+Z boundary error:  0.000e+00 (m)
+Fixed-Psi error:  0.000e+00 (Wb)
+Fixed-pressure profile error:  6.101e-12 (Pa)
+Fixed-iota profile error:  0.000e+00 (dimensionless)
+Timer: Iteration 6 total = 23.7 sec
+================
+Step 7
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(14,14,0)
+Node resolution (L,M,N)=(28,28,0)
+Boundary ratio = 0
+Pressure ratio = 0.8
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Perturbing equilibrium
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 219 ms
+Timer: Objective build = 442 ms
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed-Psi
+Building objective: fixed-pressure
+Building objective: fixed-iota
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 902 ms
+Perturbing p_l
+Factorizing linear constraints
+Timer: linear constraint factorize = 1.17 sec
+Computing df
+Timer: df computation = 7.26 sec
+Factoring df
+Timer: df/dx factorization = 12.4 ms
+Computing d^2f
+Timer: d^2f computation = 3.82 sec
+Timer: Objective build = 9.49 ms
+||dx||/||x|| =  4.010e-02
+Timer: Total perturbation = 13.6 sec
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 29.4 ms
+Timer: Linear constraint projection build = 1.32 sec
+Number of parameters: 147
+Number of objectives: 450
+Starting optimization
+Using method: lsq-exact
